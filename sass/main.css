@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background-color: darkolivegreen;
+}
+
+.bodyIndex {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 30vh 70vh;
+}
+.bodyIndex__header {
+  background-color: darkolivegreen;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+}
+.bodyIndex__header__logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyIndex__header__logo__prop {
+  width: 80%;
+}
+.bodyIndex__botones {
+  background-color: darkolivegreen;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  grid-row: 2/3;
+}
+.bodyIndex__botones__prop {
+  background-color: chocolate;
+  width: 90%;
+  height: 45px;
+  border: 0.7vh solid black;
+  border-radius: 5vh;
+}
+.bodyIndex__ventanas {
+  background-color: darkolivegreen;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 2/3;
+  grid-row: -3/-1;
+}
+.bodyIndex__ventanas__nuevaVenta {
+  background-color: darkolivegreen;
+  width: 90%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5vh solid darkslategray;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 0px 2px;
+  padding: 1vh 2vh;
+  display: none;
+}
+.bodyIndex__ventanas__nuevaVenta__divBuscador {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyIndex__ventanas__nuevaVenta__divBuscador__buscador {
+  background-color: wheat;
+  width: 50%;
+  height: auto;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 2vh;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop {
+  background-color: antiquewhite;
+  width: 90%;
+  height: 20px;
+  justify-self: center;
+  align-self: center;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  text-align: center;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd__prop {
+  background-color: chocolate;
+  border: 0.5vh solid black;
+  border-radius: 5vh;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.2vh 4vh;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla {
+  background-color: burlywood;
+  width: 90%;
+  height: 27vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto {
+  background-color: chocolate;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0vh;
+  font-size: 10px;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.3vh solid black;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__tablaProdIngresados {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__productoIngresado {
+  background-color: wheat;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0vh;
+  font-size: 10px;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
+}
+.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__productoIngresado__bor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.3vh solid black;
+}
+.bodyIndex__ventanas__nuevaVentaPago {
+  background-color: darkolivegreen;
+  width: 90%;
+  height: 35vh;
+  border: 0.5vh solid darkslategray;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 0px 2px;
+  margin-top: 2vh;
+  padding: 2vh 2vh;
+}
+.bodyIndex__ventanas__nuevaVentaPago__titulo {
+  background-color: chocolate;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  text-align: center;
+  border: 0.3vh solid black;
+  padding: 0.5vh;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 3vh 1vh;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: white;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni {
+  width: 60%;
+  height: 20px;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  text-align: center;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputNombre {
+  background-color: white;
+  width: 60%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago {
+  width: 60%;
+  height: 23px;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  text-align: center;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelSaldo {
+  font-family: "Roboto Mono", monospace;
+  font-size: 23px;
+  color: white;
+  text-align: center;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__divSaldo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: white;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop {
+  background-color: chocolate;
+  width: 60%;
+  height: 40px;
+  font-family: "Roboto Mono", monospace;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts {
+  background-color: chocolate;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4vh 1vh;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+  font-family: "Roboto Mono", monospace;
+  gap: 3vh;
+  display: none;
+}
+.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn {
+  background-color: wheat;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5vh 6vh;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__productos {
+  background-color: darkolivegreen;
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  border: 0.5vh solid darkslategray;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 0px 2px;
+  padding: 2vh 2vh;
+  display: none;
+}
+.bodyIndex__ventanas__productos__tabla {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+  border-right: 0.3vh solid black;
+}
+.bodyIndex__ventanas__productos__tabla__titulo {
+  font-family: "Roboto Mono", monospace;
+}
+.bodyIndex__ventanas__productos__tabla__prop {
+  background-color: wheat;
+  width: 80%;
+  height: auto;
+  border: 0.3vh solid black;
+}
+.bodyIndex__ventanas__productos__form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.5vh;
+}
+.bodyIndex__ventanas__productos__form__prop {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+.bodyIndex__ventanas__productos__form__prop__labelsInputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.bodyIndex__ventanas__productos__form__prop__labelsInputs__labels {
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5vh 0vh;
+}
+.bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs {
+  width: 100%;
+  height: 16px;
+  text-align: center;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+}
+.bodyIndex__ventanas__productos__form__prop__btnProductos {
+  background-color: chocolate;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+}/*# sourceMappingURL=main.css.map */

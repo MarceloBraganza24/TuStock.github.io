@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin disFC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    background-color: darkolivegreen;
+}
+
+@import "index";
+

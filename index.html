@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Tu Stock</title>
+</head>
+<body>
+
+    
+
+    <div class="bodyIndex">
+
+        <header class="bodyIndex__header">
+
+            <a class="bodyIndex__header__logo" href="./index.html"><img class="bodyIndex__header__logo__prop" src="./img/logoTuStock.png" alt="logoTuStock"></a>
+    
+        </header>
+
+        <div class="bodyIndex__botones">
+        
+            <button id="btnNuevaVenta" class="bodyIndex__botones__prop">Nueva Venta</button>
+            <button id="btnProductos" class="bodyIndex__botones__prop">Productos</button>
+            <button id="btnClientes" class="bodyIndex__botones__prop">Clientes</button>
+            <button id="btnProveedores" class="bodyIndex__botones__prop">Proveedores</button>
+            <button id="btnVentas" class="bodyIndex__botones__prop">Ventas</button>
+            <button id="btnAcercaDe" class="bodyIndex__botones__prop">Acerca de</button>
+    
+        </div>
+
+        <div class="bodyIndex__ventanas">
+        
+            <div id="ventanaNuevaVenta" class="bodyIndex__ventanas__nuevaVenta">
+
+                <div class="bodyIndex__ventanas__nuevaVenta__divBuscador">
+                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Buscar Producto ..">
+                </div>
+
+                <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn">
+
+                    <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels">
+                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Codigo</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Descripción</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Cantidad</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__llabelsInputsBtn__labels__prop">Precio U.</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Stock Disp</div>
+                    </div>
+
+                    <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs">
+                        <input id="inputCodigoProducto" type="text"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+                        <div id="popUpIngreseUnCodigo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                            <div>¡ Tienes que ingresar un codigo de producto !</div>
+                            <button id="btnContinuarVendiendoCo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                        </div>
+                        <div id="inputDescripcion" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
+                        <input id="inputCantidad" type="number"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+                        <div id="popUpIngreseCantidad" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                            <div>¡ Tienes que ingresar la cantidad !</div>
+                            <button id="btnContinuarVendiendoCa" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                        </div>
+                        <div id="inputPrecio" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
+                        <div id="inputStockDisp" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
+                    </div>
+
+                    <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd">
+                        <button type="submit" id="btnBorrarProd" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd__prop">Borrar <br>Producto</button>
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__nuevaVenta__divTabla">
+
+                    <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla">
+
+                        <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto">
+                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Codigo</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Descripción</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Cantidad</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Precio U.</div>
+                            <div>TOTAL</div>
+                        </div>
+
+                        <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__tablaProdIngresados"></div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="ventanaPago" class="bodyIndex__ventanas__nuevaVentaPago">
+                
+                <div class="bodyIndex__ventanas__nuevaVentaPago__titulo">Confirmación de venta</div>
+                
+                <div class="bodyIndex__ventanas__nuevaVentaPago__datos">
+                    
+                    <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
+                        
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">DNI</div>
+                        <input id="inputDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni" type="text">
+                        <div id="popUpIngreseDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                            <div>¡ Tienes que ingresar un DNI !</div>
+                            <button id="btnContinuarVendiendoDn" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                        </div>
+
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Nombre</div>
+                        <div id="inputNombre" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputNombre"></div>
+
+                    </div>
+
+                    <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
+                        
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Tipo de pago</div>
+                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectTipoPago">
+                            <option value="tipo de pago">Tipo de pago</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="tarjeta de debito">Tarjeta de débito</option>
+                            <option value="tarjeta de credito">Tarjeta de crédito</option>
+                        </select>
+
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Cant de cuotas</div>
+                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectCantCuotas">
+                            <option value="cant de cuotas">Cant de cuotas</option>
+                            <option value="coutas x1">coutas x1</option>
+                            <option value="coutas x3">coutas x3</option>
+                            <option value="coutas x6">coutas x6</option>
+                            <option value="coutas x12">coutas x12</option>
+                        </select>
+
+                    </div>
+
+                    <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
+                        
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelSaldo">Saldo Total</div>
+
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__divSaldo">
+                            <div>$</div>
+                            <div id="saldoTotal"></div>
+                        </div>
+
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta">
+                            <button id="btnConfirmarVenta" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop">Confirmar Venta</button>
+                        </div>
+
+                        <div id="popUpConfirmacionVenta" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                            <div>¡ La venta se registro con éxito !</div>
+                            <button id="btnContinuarVendiendo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="ventanaProductos" class="bodyIndex__ventanas__productos">
+
+                <div class="bodyIndex__ventanas__productos__tabla">
+
+                    <div class="bodyIndex__ventanas__productos__tabla__titulo">- Lista de productos -</div>
+
+                    <div class="bodyIndex__ventanas__productos__tabla__prop">
+
+                        <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd">
+                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Codigo</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Descripción</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Stock Disp</div>
+                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Precio U.</div>
+                            <div>Proveedor</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__productos__form">
+
+                    <div class="bodyIndex__ventanas__productos__form__prop">
+
+                        <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs">
+
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Codigo</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Codigo">
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Descripción</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Descripción">
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Stock Disponible</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Stock Disponible">
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Precio Unitario</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Precio Unitario">
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Proveedor</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Proveedor">
+
+                        </div>
+
+                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Guardar producto</button>
+
+                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Modificar producto</button>
+
+                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Borrar producto</button>
+
+                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo producto</button>
+                        
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="bodyIndex__ventanas__clientes"></div>
+
+            <div class="bodyIndex__ventanas__proveedores"></div>
+
+            <div class="bodyIndex__ventanas__ventas"></div>
+
+            <div class="bodyIndex__ventanas__acercaDe"></div>
+    
+        </div>
+
+        
+
+        
+
+    </div>
+
+
+    
+    
+    
+    
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

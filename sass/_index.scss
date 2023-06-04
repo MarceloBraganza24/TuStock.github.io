@@ -1,0 +1,387 @@
+.bodyIndex {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30vh 70vh;
+    &__header {
+        background-color: darkolivegreen;
+        width: 100%;
+        height: auto;
+        @include disFC;
+        grid-column: 1/2;
+        &__logo {
+            width: 100%;
+            height: auto;
+            @include disFC;
+            &__prop {
+                width: 80%;
+            }                
+        }
+    }
+    &__botones {
+        background-color: darkolivegreen;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        grid-row: 2/3;
+        &__prop {
+            background-color: chocolate;
+            width: 90%;
+            height: 45px;
+            border: 0.7vh solid black;
+            border-radius: 5vh;
+        }
+    }
+    &__ventanas {
+        background-color: darkolivegreen;
+        width: 100%;
+        height: auto;
+        @include disFC;
+        flex-direction: column;
+        grid-column: 2/3;
+        grid-row: -3/-1;
+        &__nuevaVenta {
+            background-color: darkolivegreen;
+            width: 90%;
+            height: 45vh;
+            @include disFC;  
+            border: 0.5vh solid darkslategray;
+            border-radius: 0.5vh;  
+            box-shadow: 0px 0px 0px 2px;
+            padding: 1vh 2vh;
+            display: none;
+            &__divBuscador {
+                width: 100%;
+                height: auto;
+                @include disFC; 
+                &__buscador {
+                    background-color: wheat;
+                    width: 50%;
+                    height: auto;
+                    font-family: 'Roboto Mono', monospace;
+                    text-align: center;
+                    border: 0.5vh solid black;
+                    border-radius: 0.5vh;
+                }
+            }
+            &__labelsInputsBtn {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 80% 20%;
+                grid-template-rows: 1fr 1fr;
+                padding-bottom: 2vh;
+                &__labels {
+                    width: 100%;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    font-size: 14px;
+                    font-family: 'Roboto Mono', monospace;  
+                    justify-items: center;
+                    align-items: center;
+                    color: white;
+                }
+                &__inputs {
+                    width: 100%;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    &__prop {
+                        background-color: antiquewhite;
+                        width: 90%;
+                        height: 20px;
+                        justify-self: center;
+                        align-self: center;
+                        border: 0.3vh solid black;
+                        border-radius: 0.5vh;
+                        text-align: center;
+                    }
+                }
+                &__btnBorrarProd {
+                    width: 100%;
+                    height: auto;
+                    @include disFC;
+                    grid-column: 2/3;
+                    grid-row: 1/3;
+                    &__prop {
+                        background-color: chocolate;
+                        border: 0.5vh solid black;
+                        border-radius: 5vh;
+                        font-size: 10px;
+                        font-weight: bold;
+                        font-family: 'Roboto Mono', monospace;  
+                        padding: 0.2vh 4vh;
+                    }
+                }
+            }
+            &__divTabla {
+                width: 100%;
+                height: auto;
+                @include disFC;
+                flex-direction: column;
+                &__tabla {
+                    background-color: burlywood;
+                    width: 90%;
+                    height: 27vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 0.3vh solid black;
+                    border-radius: 0.5vh;
+                    &__propProducto {
+                        background-color: chocolate;
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        justify-items: center;
+                        align-items: center;
+                        padding: 1vh 0vh;
+                        font-size: 10px;
+                        font-family: 'Roboto Mono', monospace;  
+                        border-bottom: 0.3vh solid black;  
+                        &__bor {
+                            width: 100%;
+                            height: auto;
+                            @include disFC;
+                            border-right: 0.3vh solid black;
+                        }
+                    }
+                    &__tablaProdIngresados {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: scroll;
+                    }
+                    &__productoIngresado {
+                        background-color: wheat;
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        justify-items: center;
+                        align-items: center;
+                        padding: 1vh 0vh;
+                        font-size: 10px;
+                        font-family: 'Roboto Mono', monospace;  
+                        border-bottom: 0.3vh solid black; 
+                        &__bor {
+                            width: 100%;
+                            height: auto;
+                            @include disFC;
+                            border-right: 0.3vh solid black;
+                        }
+                    }
+                }
+            }
+        }
+        &__nuevaVentaPago {
+            background-color: darkolivegreen;
+            width: 90%;
+            height: 35vh;
+            border: 0.5vh solid darkslategray;
+            border-radius: 0.5vh;  
+            box-shadow: 0px 0px 0px 2px;
+            margin-top: 2vh;
+            padding: 2vh 2vh;
+            &__titulo {
+                background-color: chocolate;
+                font-family: 'Roboto Mono', monospace; 
+                color: black;
+                text-align: center;
+                border: 0.3vh solid black;
+                padding: 0.5vh;
+            }
+            &__datos {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                padding: 3vh 1vh;
+                &__columnas {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 2vh;
+                    &__labelsPago {
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: 15px;
+                        color: white;
+                    }                    
+                    &__inputDni {
+                        width: 60%;
+                        height: 20px;
+                        border: 0.3vh solid black;
+                        border-radius: 0.5vh;
+                        text-align: center;
+                    }
+                    &__inputNombre {
+                        background-color: white;
+                        width: 60%;
+                        height: 20px;
+                        @include disFC;
+                        border: 0.3vh solid black;
+                        border-radius: 0.5vh;
+                        text-align: center;
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: 11px;
+                        
+                    }
+                    &__selectTipoPago {
+                        width: 60%;
+                        height: 23px;
+                        border: 0.3vh solid black;
+                        border-radius: 0.5vh;
+                        text-align: center;
+                    }
+                    &__labelSaldo {
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: 23px;
+                        color: white;
+                        text-align: center;
+                    }
+                    &__divSaldo {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2vh;
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: 20px;
+                        color: white;
+                    }
+                    &__btnConfirmarVenta {
+                            width: 100%;
+                            height: auto;
+                            @include disFC;
+                        &__prop {
+                            background-color: chocolate;
+                            width: 60%;
+                            height: 40px;
+                            font-family: 'Roboto Mono', monospace;
+                            border: 0.5vh solid black;
+                            border-radius: 0.5vh;
+                        }
+                    }
+                    &__popUpAlerts {
+                        background-color: chocolate;
+                        width: 50%;
+                        height: auto;
+                        @include disFC;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 4vh 1vh;
+                        border: 0.5vh solid black;
+                        border-radius: 0.5vh;
+                        font-family: 'Roboto Mono', monospace;
+                        gap: 3vh;
+                        display: none;
+                        &__btn {
+                            background-color: wheat;
+                            font-family: 'Roboto Mono', monospace;
+                            padding: 0.5vh 6vh;
+                            border: 0.5vh solid black;
+                            border-radius: 0.5vh;
+                        }
+                    }
+                }
+            }
+        }
+        &__productos {
+            background-color: darkolivegreen;
+            width: 95%;
+            height: auto;  
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 1fr;
+            border: 0.5vh solid darkslategray;
+            border-radius: 0.5vh;
+            box-shadow: 0px 0px 0px 2px;
+            padding: 2vh 2vh;
+            display: none;
+            &__tabla {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                gap: 1vh;
+                border-right: 0.3vh solid black;
+                &__titulo {
+                    font-family: 'Roboto Mono', monospace; 
+                }                
+                &__prop {
+                    background-color: wheat;
+                    width: 80%;
+                    height: auto;
+                    border: 0.3vh solid black;
+                }
+            }
+            &__form {
+                width: 100%;
+                height: auto;
+                @include disFC;
+                flex-direction: column;
+                padding-bottom: 1.5vh;                
+                &__prop {
+                    width: 80%;
+                    height: auto;  
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 1vh;
+                    &__labelsInputs {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        &__labels {
+                            width: 100%;
+                            height: auto;
+                            font-size: 10px;
+                            font-family: 'Roboto Mono', monospace; 
+                            padding: 0.5vh 0vh;
+                        }
+                        &__inputs {
+                            width: 100%;
+                            height: 16px;
+                            text-align: center;
+                            border: 0.3vh solid black;
+                            border-radius: 0.5vh;
+                            font-size: 11px;
+                            font-family: 'Roboto Mono', monospace;
+                        }
+                    } 
+                    &__btnProductos {
+                        background-color: chocolate;
+                        border: 0.5vh solid black;
+                        border-radius: 0.5vh;
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: 11px;
+                    }                 
+                }                
+            }
+        }
+    }        
+}
