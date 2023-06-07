@@ -38,7 +38,13 @@
             <div id="ventanaNuevaVenta" class="bodyIndex__ventanas__nuevaVenta">
 
                 <div class="bodyIndex__ventanas__nuevaVenta__divBuscador">
-                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Buscar Producto ..">
+
+                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text">
+
+                    <ul class="bodyIndex__ventanas__nuevaVenta__divBuscador__ul">
+                        <li class="bodyIndex__ventanas__nuevaVenta__divBuscador__ul__li">Vino Blanco</li>
+                    </ul>
+                    
                 </div>
 
                 <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn">
@@ -53,15 +59,15 @@
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs">
                         <input id="inputCodigoProducto" type="text"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
-                        <div id="popUpIngreseUnCodigo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                        <div id="popUpIngreseUnCodigo" class="popUpAlerts">
                             <div>¡ Tienes que ingresar un codigo de producto !</div>
-                            <button id="btnContinuarVendiendoCo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                            <button id="btnContinuarVendiendoCo" class="popUpAlerts__btn">Continuar</button>
                         </div>
                         <div id="inputDescripcion" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                         <input id="inputCantidad" type="number"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
-                        <div id="popUpIngreseCantidad" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                        <div id="popUpIngreseCantidad" class="popUpAlerts">
                             <div>¡ Tienes que ingresar la cantidad !</div>
-                            <button id="btnContinuarVendiendoCa" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                            <button id="btnContinuarVendiendoCa" class="popUpAlerts__btn">Continuar</button>
                         </div>
                         <div id="inputPrecio" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                         <div id="inputStockDisp" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
@@ -73,21 +79,27 @@
 
                 </div>
 
-                <div class="bodyIndex__ventanas__nuevaVenta__divTabla">
+                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta">
 
-                    <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla">
+                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla">
 
-                        <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto">
-                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Codigo</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Descripción</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Cantidad</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor">Precio U.</div>
-                            <div>TOTAL</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                            
+                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+
+                            </div>
+
+                            <div></div>
+
                         </div>
 
-                        <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTabla__tabla__tablaProdIngresados"></div>
-
-
+                        <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados"></div>
 
                     </div>
 
@@ -105,9 +117,9 @@
                         
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">DNI</div>
                         <input id="inputDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni" type="text">
-                        <div id="popUpIngreseDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                        <div id="popUpIngreseDni" class="popUpAlerts">
                             <div>¡ Tienes que ingresar un DNI !</div>
-                            <button id="btnContinuarVendiendoDn" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                            <button id="btnContinuarVendiendoDn" class="popUpAlerts__btn">Continuar</button>
                         </div>
 
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Nombre</div>
@@ -149,9 +161,9 @@
                             <button id="btnConfirmarVenta" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop">Confirmar Venta</button>
                         </div>
 
-                        <div id="popUpConfirmacionVenta" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts">
+                        <div id="popUpConfirmacionVenta" class="popUpAlerts">
                             <div>¡ La venta se registro con éxito !</div>
-                            <button id="btnContinuarVendiendo" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn">Continuar</button>
+                            <button id="btnContinuarVendiendoCV" class="popUpAlerts__btn">Continuar</button>
                         </div>
 
                     </div>
@@ -162,23 +174,9 @@
 
             <div id="ventanaProductos" class="bodyIndex__ventanas__productos">
 
-                <div class="bodyIndex__ventanas__productos__tabla">
-
-                    <div class="bodyIndex__ventanas__productos__tabla__titulo">- Lista de productos -</div>
-
-                    <div class="bodyIndex__ventanas__productos__tabla__prop">
-
-                        <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd">
-                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Codigo</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Descripción</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Stock Disp</div>
-                            <div class="bodyIndex__ventanas__nuevaVenta__tablaForm__tabla__propiedadesProd__bor">Precio U.</div>
-                            <div>Proveedor</div>
-                        </div>
-
-                    </div>
-
-                </div>
+                <div class="bodyIndex__ventanas__productos__titulo">
+                    <div class="bodyIndex__ventanas__productos__titulo__prop">- Lista de productos -</div>
+                </div>                
 
                 <div class="bodyIndex__ventanas__productos__form">
 
@@ -190,9 +188,9 @@
                             <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Codigo">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Descripción</div>
                             <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Descripción">
-                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Stock Disponible</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Stock Disponible">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Precio Unitario</div>
+                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Stock Disponible">
+                            <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Stock Disponible</div>
                             <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Precio Unitario">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Proveedor</div>
                             <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Proveedor">
@@ -207,6 +205,37 @@
 
                         <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo producto</button>
                         
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__productos__divTablaVentanaProd">
+
+                    <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador">
+                        <input class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
+                    </div>
+
+                    <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla">
+
+                        <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto">
+                            
+                            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla">
+
+                                <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla__bor">Codigo</div>
+                                <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla__bor">Descripción</div>
+                                <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla__bor">Precio U</div>
+                                <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla__bor">Stock Disp</div>
+                                <div>Proveedor</div>
+
+                            </div>
+
+                            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__scrollSpace"></div>
+
+                        </div>
+
+                        <div id="tablaListaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos">
+                        </div>
+
                     </div>
 
                 </div>
@@ -235,7 +264,7 @@
     
     
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

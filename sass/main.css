@@ -80,15 +80,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .bodyIndex__ventanas__nuevaVenta__divBuscador__buscador {
   background-color: wheat;
-  width: 50%;
+  width: 70%;
   height: auto;
   font-family: "Roboto Mono", monospace;
   text-align: center;
   border: 0.5vh solid black;
   border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__nuevaVenta__divBuscador__ul {
+  background-color: wheat;
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  border-bottom: 0.5vh solid black;
+  border-right: 0.5vh solid black;
+  border-left: 0.5vh solid black;
+  border-radius: 0.5vh;
+  font-family: "Roboto Mono", monospace;
+  padding: 1vh 0vh;
+  display: none;
+}
+.bodyIndex__ventanas__nuevaVenta__divBuscador__ul__li {
+  width: 95%;
+  height: auto;
+  font-size: 13px;
+  border-bottom: 0.3vh solid black;
 }
 .bodyIndex__ventanas__nuevaVenta__labelsInputsBtn {
   width: 100%;
@@ -123,11 +147,12 @@
   background-color: antiquewhite;
   width: 90%;
   height: 20px;
-  justify-self: center;
-  align-self: center;
   border: 0.3vh solid black;
   border-radius: 0.5vh;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  justify-self: center;
 }
 .bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd {
   width: 100%;
@@ -147,7 +172,7 @@
   font-family: "Roboto Mono", monospace;
   padding: 0.2vh 4vh;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta {
   width: 100%;
   height: auto;
   display: flex;
@@ -155,7 +180,7 @@
   align-items: center;
   flex-direction: column;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla {
   background-color: burlywood;
   width: 90%;
   height: 27vh;
@@ -165,12 +190,12 @@
   border: 0.3vh solid black;
   border-radius: 0.5vh;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto {
   background-color: chocolate;
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 98% 2%;
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
@@ -179,7 +204,14 @@
   font-family: "Roboto Mono", monospace;
   border-bottom: 0.3vh solid black;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__propProducto__bor {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor {
   width: 100%;
   height: auto;
   display: flex;
@@ -187,14 +219,21 @@
   align-items: center;
   border-right: 0.3vh solid black;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__tablaProdIngresados {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__productoIngresado {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado {
   background-color: wheat;
   width: 100%;
   height: auto;
@@ -208,7 +247,7 @@
   font-family: "Roboto Mono", monospace;
   border-bottom: 0.3vh solid black;
 }
-.bodyIndex__ventanas__nuevaVenta__divTabla__tabla__productoIngresado__bor {
+.bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor {
   width: 100%;
   height: auto;
   display: flex;
@@ -240,7 +279,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  padding: 3vh 1vh;
+  padding: 1vh 1vh 3vh 1vh;
 }
 .bodyIndex__ventanas__nuevaVentaPago__datos__columnas {
   width: 100%;
@@ -257,14 +296,16 @@
   color: white;
 }
 .bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni {
+  background-color: antiquewhite;
   width: 60%;
   height: 20px;
   border: 0.3vh solid black;
   border-radius: 0.5vh;
+  font-family: "Roboto Mono", monospace;
   text-align: center;
 }
 .bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputNombre {
-  background-color: white;
+  background-color: antiquewhite;
   width: 60%;
   height: 20px;
   display: flex;
@@ -277,6 +318,7 @@
   font-size: 11px;
 }
 .bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago {
+  background-color: antiquewhite;
   width: 60%;
   height: 23px;
   border: 0.3vh solid black;
@@ -315,63 +357,34 @@
   border: 0.5vh solid black;
   border-radius: 0.5vh;
 }
-.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts {
-  background-color: chocolate;
-  width: 50%;
+.bodyIndex__ventanas__productos {
+  background-color: darkolivegreen;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 90%;
+  border: 0.5vh solid darkslategray;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 0px 2px;
+  padding: 2vh;
+  display: none;
+}
+.bodyIndex__ventanas__productos__titulo {
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 4vh 1vh;
-  border: 0.5vh solid black;
-  border-radius: 0.5vh;
-  font-family: "Roboto Mono", monospace;
-  gap: 3vh;
-  display: none;
 }
-.bodyIndex__ventanas__nuevaVentaPago__datos__columnas__popUpAlerts__btn {
-  background-color: wheat;
-  font-family: "Roboto Mono", monospace;
-  padding: 0.5vh 6vh;
-  border: 0.5vh solid black;
-  border-radius: 0.5vh;
-}
-.bodyIndex__ventanas__productos {
-  background-color: darkolivegreen;
-  width: 95%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 1fr;
-  border: 0.5vh solid darkslategray;
-  border-radius: 0.5vh;
-  box-shadow: 0px 0px 0px 2px;
-  padding: 2vh 2vh;
-  display: none;
-}
-.bodyIndex__ventanas__productos__tabla {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  gap: 1vh;
-  border-right: 0.3vh solid black;
-}
-.bodyIndex__ventanas__productos__tabla__titulo {
-  font-family: "Roboto Mono", monospace;
-}
-.bodyIndex__ventanas__productos__tabla__prop {
-  background-color: wheat;
+.bodyIndex__ventanas__productos__titulo__prop {
   width: 80%;
   height: auto;
-  border: 0.3vh solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
 }
 .bodyIndex__ventanas__productos__form {
   width: 100%;
@@ -381,6 +394,8 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 1.5vh;
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 .bodyIndex__ventanas__productos__form__prop {
   width: 80%;
@@ -404,8 +419,9 @@
   padding: 0.5vh 0vh;
 }
 .bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs {
+  background-color: antiquewhite;
   width: 100%;
-  height: 16px;
+  height: 20px;
   text-align: center;
   border: 0.3vh solid black;
   border-radius: 0.5vh;
@@ -413,9 +429,137 @@
   font-family: "Roboto Mono", monospace;
 }
 .bodyIndex__ventanas__productos__form__prop__btnProductos {
+  height: 30px;
   background-color: chocolate;
+  border: 0.5vh solid black;
+  border-radius: 0.7vh;
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__buscador {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0vh 0vh 2vh 0vh;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop {
+  background-color: antiquewhite;
+  width: 75%;
+  height: 20px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla {
+  background-color: burlywood;
+  width: 90%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto {
+  background-color: chocolate;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 97% 3%;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0vh;
+  font-size: 10px;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
+  text-align: center;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__headerTabla__bor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.3vh solid black;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__propProducto__scrollSpace {
+  width: 100%;
+  height: auto;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto {
+  background-color: wheat;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0vh;
+  font-size: 8px;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.3vh solid black;
+}
+
+.popUpAlerts {
+  background-color: chocolate;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4vh 1vh;
   border: 0.5vh solid black;
   border-radius: 0.5vh;
   font-family: "Roboto Mono", monospace;
-  font-size: 11px;
+  gap: 3vh;
+  display: none;
+}
+.popUpAlerts__btn {
+  background-color: wheat;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5vh 6vh;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
 }/*# sourceMappingURL=main.css.map */
