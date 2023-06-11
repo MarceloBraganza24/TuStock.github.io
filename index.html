@@ -39,11 +39,7 @@
 
                 <div class="bodyIndex__ventanas__nuevaVenta__divBuscador">
 
-                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text">
-
-                    <ul class="bodyIndex__ventanas__nuevaVenta__divBuscador__ul">
-                        <li class="bodyIndex__ventanas__nuevaVenta__divBuscador__ul__li">Vino Blanco</li>
-                    </ul>
+                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Ingrese un Producto ..">
                     
                 </div>
 
@@ -59,16 +55,47 @@
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs">
                         <input id="inputCodigoProducto" type="text"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+
                         <div id="popUpIngreseUnCodigo" class="popUpAlerts">
                             <div>¡ Tienes que ingresar un codigo de producto !</div>
-                            <button id="btnContinuarVendiendoCo" class="popUpAlerts__btn">Continuar</button>
+                            <div class="popUpAlerts__btnInput">
+                                <div></div>
+                                <div class="popUpAlerts__btnInput__btn">
+                                    <button id="btnContinuarVendiendoCo" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
+                                </div>
+                                <input type="text" id="inputCerrarPopUpCod" class="popUpAlerts__btnInput__inputCerrarPopUp">   
+                            </div>
                         </div>
+
+                        <div id="popUpCodigoRepetido" class="popUpAlerts">
+
+                            <div>¡ El producto ya está en la lista !</div>
+                            <div class="popUpAlerts__btnInput">
+                                <div></div>
+                                <div class="popUpAlerts__btnInput__btn">
+                                    <button id="btnContinuarVendiendoCod" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
+                                </div>
+                                <input type="text" id="inputCerrarPopUpCodRep" class="popUpAlerts__btnInput__inputCerrarPopUp"> 
+                            </div>
+
+                        </div>
+
                         <div id="inputDescripcion" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                         <input id="inputCantidad" type="number"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+
                         <div id="popUpIngreseCantidad" class="popUpAlerts">
+
                             <div>¡ Tienes que ingresar la cantidad !</div>
-                            <button id="btnContinuarVendiendoCa" class="popUpAlerts__btn">Continuar</button>
+                            <div class="popUpAlerts__btnInput">
+                                <div></div>
+                                <div class="popUpAlerts__btnInput__btn">
+                                    <button id="btnContinuarVendiendoCa" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+                                </div>
+                                <input type="text" id="inputCerrarPopUpCant" class="popUpAlerts__btnInput__inputCerrarPopUp">
+                            </div>
+                            
                         </div>
+
                         <div id="inputPrecio" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                         <div id="inputStockDisp" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                     </div>
@@ -99,7 +126,8 @@
 
                         </div>
 
-                        <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados"></div>
+                        <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                        </div>
 
                     </div>
 
@@ -117,9 +145,18 @@
                         
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">DNI</div>
                         <input id="inputDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni" type="text">
+
                         <div id="popUpIngreseDni" class="popUpAlerts">
+
                             <div>¡ Tienes que ingresar un DNI !</div>
-                            <button id="btnContinuarVendiendoDn" class="popUpAlerts__btn">Continuar</button>
+                            <div class="popUpAlerts__btnInput">
+                                <div></div>
+                                <div class="popUpAlerts__btnInput__btn">
+                                    <button id="btnContinuarVendiendoDn" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+                                </div>
+                                <input type="text" id="inputCerrarPopUpDni" class="popUpAlerts__btnInput__inputCerrarPopUp">
+                            </div>
+
                         </div>
 
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Nombre</div>
@@ -162,8 +199,16 @@
                         </div>
 
                         <div id="popUpConfirmacionVenta" class="popUpAlerts">
+
                             <div>¡ La venta se registro con éxito !</div>
-                            <button id="btnContinuarVendiendoCV" class="popUpAlerts__btn">Continuar</button>
+                            <div class="popUpAlerts__btnInput">
+                                <div></div>
+                                <div class="popUpAlerts__btnInput__btn"> 
+                                    <button id="btnContinuarVendiendoCV" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+                                </div>
+                                <input type="text" id="inputCerrarPopUpCV" class="popUpAlerts__btnInput__inputCerrarPopUp">
+                            </div>
+
                         </div>
 
                     </div>
@@ -212,7 +257,7 @@
                 <div class="bodyIndex__ventanas__productos__divTablaVentanaProd">
 
                     <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador">
-                        <input class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
+                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
                     </div>
 
                     <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla">

@@ -151,7 +151,7 @@
   border-radius: 0.5vh;
   text-align: center;
   font-family: "Roboto Mono", monospace;
-  font-size: 13px;
+  font-size: 12px;
   justify-self: center;
 }
 .bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd {
@@ -351,11 +351,12 @@
 }
 .bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop {
   background-color: chocolate;
-  width: 60%;
-  height: 40px;
+  width: 70%;
+  height: auto;
   font-family: "Roboto Mono", monospace;
   border: 0.5vh solid black;
   border-radius: 0.5vh;
+  padding: 1.5vh 0vh;
 }
 .bodyIndex__ventanas__productos {
   background-color: darkolivegreen;
@@ -536,6 +537,35 @@
   align-items: center;
   border-right: 0.3vh solid black;
 }
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductosXDescr {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductosXDescr__producto {
+  background-color: wheat;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0vh;
+  font-size: 8px;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.3vh solid black;
+}
+.bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductosXDescr__producto__bor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.3vh solid black;
+}
 
 .popUpAlerts {
   background-color: chocolate;
@@ -556,10 +586,37 @@
   gap: 3vh;
   display: none;
 }
-.popUpAlerts__btn {
+.popUpAlerts__btnInput {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.popUpAlerts__btnInput__btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.popUpAlerts__btnInput__btn__prop {
+  width: 70%;
+  height: auto;
   background-color: wheat;
   font-family: "Roboto Mono", monospace;
-  padding: 0.5vh 6vh;
   border: 0.5vh solid black;
   border-radius: 0.5vh;
+}
+.popUpAlerts__btnInput__inputCerrarPopUp {
+  background-color: chocolate;
+  width: 1%;
+  height: 1px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  border: none;
+  z-index: 1;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

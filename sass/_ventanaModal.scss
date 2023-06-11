@@ -14,11 +14,36 @@
     font-family: 'Roboto Mono', monospace;
     gap: 3vh;
     display: none;
-    &__btn {
-        background-color: wheat;
-        font-family: 'Roboto Mono', monospace;
-        padding: 0.5vh 6vh;
-        border: 0.5vh solid black;
-        border-radius: 0.5vh;
-    }
+    &__btnInput {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
+        &__btn {
+            width: 100%;
+            height: auto;
+            @include disFC;
+            z-index: 2;
+            &__prop {
+                width: 70%;
+                height: auto;
+                background-color: wheat;
+                font-family: 'Roboto Mono', monospace;
+                border: 0.5vh solid black;
+                border-radius: 0.5vh;  
+            }         
+        }
+        &__inputCerrarPopUp {
+            background-color: chocolate;
+            width: 1%;
+            height: 1px;    
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            border: none;
+            z-index: 1;
+            display: none;
+        }
+    }   
 }

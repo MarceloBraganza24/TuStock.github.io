@@ -127,7 +127,7 @@
                         border-radius: 0.5vh;
                         text-align: center;
                         font-family: 'Roboto Mono', monospace;      
-                        font-size: 13px;
+                        font-size: 12px;
                         justify-self: center;
 
                     }
@@ -314,11 +314,12 @@
                             @include disFC;
                         &__prop {
                             background-color: chocolate;
-                            width: 60%;
-                            height: 40px;
+                            width: 70%;
+                            height: auto;
                             font-family: 'Roboto Mono', monospace;
                             border: 0.5vh solid black;
                             border-radius: 0.5vh;
+                            padding: 1.5vh 0vh;
                         }
                     }                    
                 }
@@ -460,6 +461,33 @@
                         }
                     }
                     &__tablaListaProductos {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: scroll;
+                        &__producto {
+                            background-color: wheat;
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 1fr;
+                            justify-items: center;
+                            align-items: center;
+                            padding: 1vh 0vh;
+                            font-size: 8px;
+                            font-family: 'Roboto Mono', monospace;  
+                            border-bottom: 0.3vh solid black; 
+                            &__bor {
+                                width: 100%;
+                                height: auto;
+                                @include disFC;
+                                border-right: 0.3vh solid black;
+                            }
+                        }
+                    }
+                    &__tablaListaProductosXDescr {
                         width: 100%;
                         height: 100%;
                         display: flex;
