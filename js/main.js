@@ -37,8 +37,8 @@ const inputCerrarPopUpDni = document.querySelector("#inputCerrarPopUpDni")
 const inputCerrarPopUpCV = document.querySelector("#inputCerrarPopUpCV")
 
 //selects
-let selectCantCuotas = document.querySelector("#selectCantCuotas")
-let selectTipoPago = document.querySelector("#selectTipoPago")
+const selectCantCuotas = document.querySelector("#selectCantCuotas")
+const selectTipoPago = document.querySelector("#selectTipoPago")
 
 //popUps
 const popUpConfirmacionVenta = document.querySelector("#popUpConfirmacionVenta")
@@ -365,10 +365,3 @@ mostrarVentanaNuevaVenta()
 mostrarSaldo()
 
 mostrarListaProductos()
-
-// Pruebas
-
-
-
-
-// Fin pruebas
