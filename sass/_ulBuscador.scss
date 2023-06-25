@@ -1,0 +1,43 @@
+.ulBuscadorProducto {
+    background-color: wheat;
+    width: 49%;
+    height: auto;
+    list-style: none;
+    border: 0.5vh solid black;
+    position: absolute;
+    top: 11.2%;
+    display: none;
+    &__li {
+        border-bottom: 0.3vh solid black;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        padding-left: 1vh;
+        &:hover {
+            background-color: chocolate
+        }
+    }
+}
+
+.ulBuscadorProductoVP {
+    background-color: wheat;
+    width: 37.5%;
+    height: auto;
+    list-style: none;
+    border: 0.5vh solid black;
+    position: absolute;
+    top: 26.5%;
+    display: none;
+    &__li {
+        border-bottom: 0.3vh solid black;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        padding-left: 1vh;
+        &:hover {
+            background-color: chocolate
+        }
+    }
+}
+
+.filtro {
+    display: none;
+}

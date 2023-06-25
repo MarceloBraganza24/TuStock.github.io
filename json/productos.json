@@ -1,0 +1,18 @@
+
+[
+
+    {"codigo":1,"descripcion":"Chocolate Vizzio 290g","precio":100, "stock": 15, "proveedor": "Dist. chile"},
+    {"codigo":2,"descripcion":"Chocolate Block 1kg","precio":220, "stock": 10, "proveedor": "Dist. colo"},
+    {"codigo":5,"descripcion":"Gaseosa Sprite 1.25l","precio":950, "stock": 5, "proveedor": "Dist. chirrus"},
+    {"codigo":3,"descripcion":"Gaseosa Sprite 2.25l","precio":360, "stock": 35, "proveedor": "Dist. arg"},
+    {"codigo":4,"descripcion":"Gaseosa Sprite 3l","precio":550, "stock": 18, "proveedor": "Dist. chile"},
+    {"codigo":6,"descripcion":"Sal fina","precio":250, "stock": 11, "proveedor": "Dist. colo"},
+    {"codigo":7,"descripcion":"Agua Mineral 1.5l","precio":630, "stock": 2, "proveedor": "Dist. av"},
+    {"codigo":8,"descripcion":"Agua Mineral 2l","precio":760, "stock": 6, "proveedor": "Dist. rep"},
+    {"codigo":9,"descripcion":"Agua con gas 1l","precio":960, "stock": 6, "proveedor": "Dist. rep"},
+    {"codigo":10,"descripcion":"Agua con gas 2l","precio":1160, "stock": 6, "proveedor": "Dist. rep"},
+    {"codigo":11,"descripcion":"Shampoo Pantene","precio":560, "stock": 22, "proveedor": "Dist. colo"},
+    {"codigo":12,"descripcion":"Cotonetes X200","precio":260, "stock": 42, "proveedor": "Dist. Martin"}
+
+]
+

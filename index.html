@@ -12,7 +12,85 @@
 </head>
 <body>
 
-    
+    <!-- PopUps -->
+
+    <div id="popUpIngreseUnCodigo" class="popUpAlerts">
+        <div>¡ Tienes que ingresar un codigo de producto !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn">
+                <button id="btnContinuarVendiendoCo" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCod" class="popUpAlerts__btnInput__inputCerrarPopUp">   
+        </div>
+    </div>
+
+    <div id="popUpCodigoRepetido" class="popUpAlerts">
+
+        <div>¡ El producto ya está en la lista !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn">
+                <button id="btnContinuarVendiendoCod" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCodRep" class="popUpAlerts__btnInput__inputCerrarPopUp"> 
+        </div>
+
+    </div>
+
+    <div id="popUpIngreseCantidad" class="popUpAlerts">
+
+        <div>¡ Tienes que ingresar la cantidad !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn">
+                <button id="btnContinuarVendiendoCa" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCant" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+        
+    </div>
+
+    <div id="popUpIngreseDni" class="popUpAlerts">
+
+        <div>¡ Tienes que ingresar un DNI !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn">
+                <button id="btnContinuarVendiendoDn" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpDni" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpConfirmacionVenta" class="popUpAlerts">
+
+        <div>¡ La venta se registro con éxito !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnContinuarVendiendoCV" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCV" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpCompletarCamposVP" class="popUpAlerts">
+
+        <div>¡ Debes completar todos los campos !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnCompletarCamposVP" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCCVP" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <!-- fin PopUps -->
 
     <div class="bodyIndex">
 
@@ -39,69 +117,43 @@
 
                 <div class="bodyIndex__ventanas__nuevaVenta__divBuscador">
 
-                    <input class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Ingrese un Producto ..">
-                    
+                    <input id="inputBuscarProductoNV" class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Buscar producto ..">
+
+                    <ul id="ulBuscadorProductoNV" class="ulBuscadorProducto">
+                        <li id="liNVChocolateVizzio290g" class="ulBuscadorProducto__li">Chocolate Vizzio 290g</li>
+                        <li id="liNVChocolateBlock1kg" class="ulBuscadorProducto__li">Chocolate Block 1kg</li>
+                        <li id="liNVGaseosaSprite125l" class="ulBuscadorProducto__li">Gaseosa Sprite 1.25l</li>
+                        <li id="liNVGaseosaSprite225l" class="ulBuscadorProducto__li">Gaseosa Sprite 2.25l</li>
+                        <li id="liNVGaseosaSprite3l" class="ulBuscadorProducto__li">Gaseosa Sprite 3l</li>
+                        <li id="liNVSalFina" class="ulBuscadorProducto__li">Sal Fina</li>
+                        <li id="liNVAguaMineral15l" class="ulBuscadorProducto__li">Agua Mineral 1.5l</li>
+                        <li id="liNVAguaMineral2l" class="ulBuscadorProducto__li">Agua Mineral 2l</li>
+                        <li id="liNVAguaConGas1l" class="ulBuscadorProducto__li">Agua con Gas 1l</li>
+                        <li id="liNVAguaConGas2l" class="ulBuscadorProducto__li">Agua con Gas 2l</li>
+                        <li id="liNVSampooPantene" class="ulBuscadorProducto__li">Shampoo Pantene</li>
+                        <li id="liNVCotonetesX200" class="ulBuscadorProducto__li">Cotonetes X200</li>
+                    </ul>
+                     
                 </div>
 
                 <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn">
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels">
                         <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Codigo</div>
-                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Descripción</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Cantidad</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__llabelsInputsBtn__labels__prop">Precio U.</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Stock Disp</div>
                     </div>
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs">
-                        <input id="inputCodigoProducto" type="text"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
-
-                        <div id="popUpIngreseUnCodigo" class="popUpAlerts">
-                            <div>¡ Tienes que ingresar un codigo de producto !</div>
-                            <div class="popUpAlerts__btnInput">
-                                <div></div>
-                                <div class="popUpAlerts__btnInput__btn">
-                                    <button id="btnContinuarVendiendoCo" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
-                                </div>
-                                <input type="text" id="inputCerrarPopUpCod" class="popUpAlerts__btnInput__inputCerrarPopUp">   
-                            </div>
-                        </div>
-
-                        <div id="popUpCodigoRepetido" class="popUpAlerts">
-
-                            <div>¡ El producto ya está en la lista !</div>
-                            <div class="popUpAlerts__btnInput">
-                                <div></div>
-                                <div class="popUpAlerts__btnInput__btn">
-                                    <button id="btnContinuarVendiendoCod" class="popUpAlerts__btnInput__btn__prop" type="submit">Continuar</button>
-                                </div>
-                                <input type="text" id="inputCerrarPopUpCodRep" class="popUpAlerts__btnInput__inputCerrarPopUp"> 
-                            </div>
-
-                        </div>
-
-                        <div id="inputDescripcion" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
-                        <input id="inputCantidad" type="number"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
-
-                        <div id="popUpIngreseCantidad" class="popUpAlerts">
-
-                            <div>¡ Tienes que ingresar la cantidad !</div>
-                            <div class="popUpAlerts__btnInput">
-                                <div></div>
-                                <div class="popUpAlerts__btnInput__btn">
-                                    <button id="btnContinuarVendiendoCa" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
-                                </div>
-                                <input type="text" id="inputCerrarPopUpCant" class="popUpAlerts__btnInput__inputCerrarPopUp">
-                            </div>
-                            
-                        </div>
-
-                        <div id="inputPrecio" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
-                        <div id="inputStockDisp" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
+                        <input id="inputCodigoProductoNV" type="text"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+                        <input id="inputCantidadNV" type="number"  class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop">
+                        <div id="inputPrecioNV" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
+                        <div id="inputStockDispNV" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__inputs__prop"></div>
                     </div>
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd">
-                        <button type="submit" id="btnBorrarProd" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd__prop">Borrar <br>Producto</button>
+                        <button type="submit" id="btnBorrarProdNV" class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__btnBorrarProd__prop">Borrar <br>Producto</button>
                     </div>
 
                 </div>
@@ -127,6 +179,103 @@
                         </div>
 
                         <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+
+                            <div id="divChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">1</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Chocolate Vizzio 290g</div>
+                                <div id="cantChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">400</div>
+                                <div id="totalChocoVizzio290g"></div>
+                            </div>
+
+                            <div id="divChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">2</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Chocolate Block 1kg</div>
+                                <div id="cantChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">220</div>
+                                <div id="totalChocoBlock1kg"></div>
+                            </div>
+
+                            <div id="divSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">3</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 1.25l</div>
+                                <div id="cantSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">360</div>
+                                <div id="totalSprite1250ml"></div>
+                            </div>
+
+                            <div id="divSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">4</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 2.25l</div>
+                                <div id="cantSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">550</div>
+                                <div id="totalSprite2250ml"></div>
+                            </div>
+
+                            <div id="divSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">5</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 3l</div>
+                                <div id="cantSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">950</div>
+                                <div id="totalSprite3l"></div>
+                            </div>
+
+                            <div id="divSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">6</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Sal Fina</div>
+                                <div id="cantSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">250</div>
+                                <div id="totalSalFina"></div>
+                            </div>
+
+                            <div id="divAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">7</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua Mineral 1.5l</div>
+                                <div id="cantAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">630</div>
+                                <div id="totalAguaMineral1500ml"></div>
+                            </div>
+
+                            <div id="divAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">8</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua Mineral 2l</div>
+                                <div id="cantAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">760</div>
+                                <div id="totalAguaMineral2l"></div>
+                            </div>
+
+                            <div id="divAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">9</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua con Gas 1l</div>
+                                <div id="cantAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">960</div>
+                                <div id="totalAguaConGas1l"></div>
+                            </div>
+
+                            <div id="divAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">10</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua con Gas 2l</div>
+                                <div id="cantAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">1160</div>
+                                <div id="totalAguaConGas2l"></div>
+                            </div>
+
+                            <div id="divSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">11</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Sampoo Pantene</div>
+                                <div id="cantSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">560</div>
+                                <div id="totalSampooPantene"></div>
+                            </div>
+
+                            <div id="divCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">12</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Cotonetes X200</div>
+                                <div id="cantCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">260</div>
+                                <div id="totalCotonetesX200"></div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -143,31 +292,17 @@
                     
                     <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
                         
-                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">DNI</div>
-                        <input id="inputDni" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni" type="text">
-
-                        <div id="popUpIngreseDni" class="popUpAlerts">
-
-                            <div>¡ Tienes que ingresar un DNI !</div>
-                            <div class="popUpAlerts__btnInput">
-                                <div></div>
-                                <div class="popUpAlerts__btnInput__btn">
-                                    <button id="btnContinuarVendiendoDn" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
-                                </div>
-                                <input type="text" id="inputCerrarPopUpDni" class="popUpAlerts__btnInput__inputCerrarPopUp">
-                            </div>
-
-                        </div>
-
-                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Nombre</div>
-                        <div id="inputNombre" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputNombre"></div>
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">DNI Cliente</div>
+                        <input id="inputDniNV" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputDni" type="text">
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Nombre Cliente</div>
+                        <div id="inputNombreNV" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__inputNombre"></div>
 
                     </div>
 
                     <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
                         
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Tipo de pago</div>
-                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectTipoPago">
+                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectTipoPagoNV">
                             <option value="tipo de pago">Tipo de pago</option>
                             <option value="efectivo">Efectivo</option>
                             <option value="tarjeta de debito">Tarjeta de débito</option>
@@ -175,7 +310,7 @@
                         </select>
 
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Cant de cuotas</div>
-                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectCantCuotas">
+                        <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectCantCuotasNV">
                             <option value="cant de cuotas">Cant de cuotas</option>
                             <option value="coutas x1">Coutas x1</option>
                             <option value="coutas x3">Coutas x3</option>
@@ -191,24 +326,11 @@
 
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__divSaldo">
                             <div>$</div>
-                            <div id="saldoTotal"></div>
+                            <div id="saldoTotalNV"></div>
                         </div>
 
                         <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta">
-                            <button id="btnConfirmarVenta" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop">Confirmar Venta</button>
-                        </div>
-
-                        <div id="popUpConfirmacionVenta" class="popUpAlerts">
-
-                            <div>¡ La venta se registro con éxito !</div>
-                            <div class="popUpAlerts__btnInput">
-                                <div></div>
-                                <div class="popUpAlerts__btnInput__btn"> 
-                                    <button id="btnContinuarVendiendoCV" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
-                                </div>
-                                <input type="text" id="inputCerrarPopUpCV" class="popUpAlerts__btnInput__inputCerrarPopUp">
-                            </div>
-
+                            <button id="btnConfirmarVentaNV" class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__btnConfirmarVenta__prop">Confirmar Venta</button>
                         </div>
 
                     </div>
@@ -230,25 +352,25 @@
                         <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs">
 
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Codigo</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Codigo">
+                            <input id="inputCodigoProductoVP" class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Codigo">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Descripción</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Descripción">
+                            <input id="inputDescrProductoVP" class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Descripción">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Precio Unitario</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Precio Unitario">
+                            <input id="inputPrecioProductoVP" class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Precio Unitario">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Stock Disponible</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Stock Disponible">
+                            <input id="inputStockProductoVP" class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Stock Disponible">
                             <div class="bodyIndex__ventanas__productos__form__prop__labelsInputs__labels">Proveedor</div>
-                            <input class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Proveedor">
+                            <input id="inputProvProductoVP" class="bodyIndex__ventanas__productos__form__prop__labelsInputs__inputs" type="text" placeholder="Proveedor">
 
                         </div>
 
-                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Guardar producto</button>
+                        <button id="btnGuardarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Guardar producto</button>
 
-                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Modificar producto</button>
+                        <button id="btnModificarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Modificar producto</button>
 
-                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Borrar producto</button>
+                        <button id="btnBorrarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Borrar producto</button>
 
-                        <button class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo producto</button>
+                        <button id="btnNuevoProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo producto</button>
                         
                     </div>
 
@@ -257,7 +379,24 @@
                 <div class="bodyIndex__ventanas__productos__divTablaVentanaProd">
 
                     <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador">
-                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
+
+                        <input id="inputBuscarProductoVP" class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
+
+                        <ul id="ulBuscadorProductoVP" class="ulBuscadorProductoVP">
+                            <li id="liVPChocolateVizzio290g" class="ulBuscadorProductoVP__li">Chocolate Vizzio 290g</li>
+                            <li id="liVPChocolateBlock1kg" class="ulBuscadorProductoVP__li">Chocolate Block 1kg</li>
+                            <li id="liVPGaseosaSprite125l" class="ulBuscadorProductoVP__li">Gaseosa Sprite 1.25l</li>
+                            <li id="liVPGaseosaSprite225l" class="ulBuscadorProductoVP__li">Gaseosa Sprite 2.25l</li>
+                            <li id="liVPGaseosaSprite3l" class="ulBuscadorProductoVP__li">Gaseosa Sprite 3l</li>
+                            <li id="liVPSalFina" class="ulBuscadorProductoVP__li">Sal Fina</li>
+                            <li id="liVPAguaMineral15l" class="ulBuscadorProductoVP__li">Agua Mineral 1.5l</li>
+                            <li id="liVPAguaMineral2l" class="ulBuscadorProductoVP__li">Agua Mineral 2l</li>
+                            <li id="liVPAguaConGas1l" class="ulBuscadorProductoVP__li">Agua con Gas 1l</li>
+                            <li id="liVPAguaConGas2l" class="ulBuscadorProductoVP__li">Agua con Gas 2l</li>
+                            <li id="liVPSampooPantene" class="ulBuscadorProductoVP__li">Shampoo Pantene</li>
+                            <li id="liVPCotonetesX200" class="ulBuscadorProductoVP__li">Cotonetes X200</li>
+                        </ul>
+
                     </div>
 
                     <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla">
@@ -279,6 +418,15 @@
                         </div>
 
                         <div id="tablaListaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos">
+
+                            <div id="prod1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">1</div>
+                                <div id="descrProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provProd1"></div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -288,13 +436,399 @@
 
             </div>
 
-            <div class="bodyIndex__ventanas__clientes"></div>
+            <div id="ventanaClientes" class="bodyIndex__ventanas__clientes">
 
-            <div class="bodyIndex__ventanas__proveedores"></div>
+                <div class="bodyIndex__ventanas__clientes__titulo">
+                    <div class="bodyIndex__ventanas__clientes__titulo__prop">- Lista de Clientes -</div>
+                </div>                
 
-            <div class="bodyIndex__ventanas__ventas"></div>
+                <div class="bodyIndex__ventanas__clientes__form">
 
-            <div class="bodyIndex__ventanas__acercaDe"></div>
+                    <div class="bodyIndex__ventanas__clientes__form__prop">
+
+                        <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs">
+
+                            <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Nombre</div>
+                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Nombre">
+                            <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Dni</div>
+                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dni">
+                            <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Teléfono</div>
+                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
+                            <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Email</div>
+                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
+                            <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Dirección</div>
+                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
+
+                        </div>
+
+                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Guardar cliente</button>
+
+                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Modificar cliente</button>
+
+                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Borrar cliente</button>
+
+                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Nuevo cliente</button>
+                        
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien">
+
+                    <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__buscador">
+
+                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__buscador__prop" type="text" placeholder=".. Buscar clientes ..">
+
+                    </div>
+
+                    <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla">
+
+                        <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente">
+                            
+                            <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__headerTabla">
+
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__headerTabla__bor">Nombre</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__headerTabla__bor">Dni</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__headerTabla__bor">Teléfono</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__headerTabla__bor">Email</div>
+                                <div>Dirección</div>
+
+                            </div>
+
+                            <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__propCliente__scrollSpace"></div>
+
+                        </div>
+
+                        <div id="tablaListaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes">
+
+                            <!-- <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">Marcelo Braganza</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">38917705</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">2926450496</div>
+                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">marcelo_braganza@hotmail.com</div>
+                                <div>Las Heras 758</div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="ventanaProveedores" class="bodyIndex__ventanas__proveedores">
+
+                <div class="bodyIndex__ventanas__proveedores__titulo">
+                    <div class="bodyIndex__ventanas__proveedores__titulo__prop">- Lista de Proveedores -</div>
+                </div>                
+
+                <div class="bodyIndex__ventanas__proveedores__form">
+
+                    <div class="bodyIndex__ventanas__proveedores__form__prop">
+
+                        <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs">
+
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Razon Social</div>
+                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Razon Social">
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">CUIT/CUIL</div>
+                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="CUIT/CUIL">
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Teléfono</div>
+                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Email</div>
+                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Dirección</div>
+                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
+
+                        </div>
+
+                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Guardar proveedor</button>
+
+                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Modificar proveedor</button>
+
+                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Borrar proveedor</button>
+
+                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Nuevo proveedor</button>
+                        
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv">
+
+                    <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__buscador">
+
+                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__buscador__prop" type="text" placeholder=".. Buscar proveedores ..">
+
+                    </div>
+
+                    <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla">
+
+                        <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores">
+                            
+                            <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla">
+
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Razon Social</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">CUIL/CUIT</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Teléfono</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Email</div>
+                                <div>Dirección</div>
+
+                            </div>
+
+                            <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__scrollSpace"></div>
+
+                        </div>
+
+                        <div id="tablaListaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores">
+
+                            <!-- <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">Dist. el colo</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">23289178059</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">2926496996</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">distColo@hotmail.com</div>
+                                <div>Belgrano 1758</div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="ventanaVentas" class="bodyIndex__ventanas__ventas">
+
+                <div class="bodyIndex__ventanas__ventas__titulo">- Lista de Ventas -</div>
+
+                <div class="bodyIndex__ventanas__ventas__btnSaldo">
+
+                    <div class="bodyIndex__ventanas__ventas__btnSaldo__btns">
+
+                        <button class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnBorrarVenta">Borarr Venta</button>
+
+                        <button class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnImprimirVenta">Imprimir <br> Venta</button>
+
+                    </div>
+                    
+                    <div class="bodyIndex__ventanas__ventas__btnSaldo__divSaldo">
+
+                        <div class="bodyIndex__ventanas__ventas__btnSaldo__divSaldo__prop">
+
+                            <div>Saldo Total</div>
+
+                            <div>160000</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bodyIndex__ventanas__ventas__buscadorTabla">
+                    
+                    <div class="bodyIndex__ventanas__ventas__buscadorTabla__buscador">
+
+                        <div class="bodyIndex__ventanas__ventas__buscadorTabla__buscador__input">
+
+                            <input type="text" class="bodyIndex__ventanas__ventas__buscadorTabla__buscador__input__prop" placeholder=".. Buscar Venta ..">
+
+                        </div>
+
+                    </div>
+
+                    <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla">
+
+                        <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll">
+                            
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header">
+
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Codigo Venta</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Detalle</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Cliente</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Tipo Pago</div>
+                                <div>Saldo Total</div>
+
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__scroll"></div>
+
+                        </div>
+
+                        <div id="" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas">
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">001</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Marcelo Braganza</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>160000</div>
+                            </div>
+
+                            <!-- <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">002</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Sebastian Lopez</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Credito</div>
+                                <div>260000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">003</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Osvaldo Braganza</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Débito</div>
+                                <div>560000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">004</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Julieta Miquelarena</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>340000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">005</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Mariela Piro</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
+                                <div>180500</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">006</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Juan Peratz</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>10000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">007</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Franco Wagner</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Débito</div>
+                                <div>690000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">008</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Marco Lavagnino</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>60000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">009</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Juan Cruz Piro</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
+                                <div>260000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">010</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Malena Zelaya</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>650000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">011</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Mario Piro</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>25000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">012</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Osvaldo Joaquin Braganza</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
+                                <div>50000</div>
+                            </div>
+
+                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">013</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
+                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                </div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Francisco Lavagnino</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
+                                <div>90000</div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="ventanaAcercaDe" class="bodyIndex__ventanas__acercaDe">
+
+                <div class="bodyIndex__ventanas__acercaDe__datosEmpresa">
+                    
+                    <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__titulo">Datos de la Empresa</div>
+
+                    <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos">
+
+                        <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos">
+
+                            <div>Razon Social:</div>
+                            <div>Lito Soluciones Informáticas</div>
+                            <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos__br"></div>
+                            <div>Dirección Postal:</div>
+                            <div>Las Heras 758</div>
+
+                        </div>
+
+                        <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos">
+
+                            <div>Nombre:</div>
+                            <div>Marcelo Adrián Braganza</div>
+                            <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos__br"></div>
+                            <div>Teléfono:</div>
+                            <div>2926450496</div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
     
         </div>
 
