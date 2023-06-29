@@ -1042,11 +1042,26 @@ function setearProductoNuevaVenta(e) {
         .then( (res) => res.json())
         .then( (data) => { data.forEach((producto) => {
 
-            if(inputCodigoProductoNV.value === ``) {
+            if(inputCodigoProductoNV.value == ``) {
+
+                Toastify({
+                    text: "Debes ingresar un producto a la tabla",
+                    duration: 2000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
     
-                popUpIngreseUnCodigo.style.display = 'flex'
+                /* popUpIngreseUnCodigo.style.display = 'flex'
                 inputCerrarPopUpCod.style.display = 'flex'
-                inputCerrarPopUpCod.focus()
+                inputCerrarPopUpCod.focus() */
         
             }  else if (inputCodigoProductoNV.value == producto.codigo) {
                 inputBuscarProductoNV.value = `${producto.descripcion}`
@@ -1070,15 +1085,46 @@ function setearProductoListaNuevaVenta(e) {
 
         if(inputCantidadNV.value === ``) {
 
-            popUpIngreseCantidad.style.display = 'flex' 
+            Toastify({
+                text: "Debes ingresar la cantidad",
+                duration: 2000,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+
+            /* popUpIngreseCantidad.style.display = 'flex' 
             inputCerrarPopUpCant.style.display = 'flex'
-            inputCerrarPopUpCant.focus()
+            inputCerrarPopUpCant.focus() */
     
         } else if ( (inputCodigoProductoNV.value == codigoFila1TablaProductosIngresados.textContent) || (inputCodigoProductoNV.value == codigoFila2TablaProductosIngresados.textContent) || (inputCodigoProductoNV.value == codigoFila3TablaProductosIngresados.textContent) || (inputCodigoProductoNV.value == codigoFila4TablaProductosIngresados.textContent) || (inputCodigoProductoNV.value == codigoFila5TablaProductosIngresados.textContent) ) {
 
-            popUpCodigoRepetido.style.display = 'flex'
+
+            Toastify({
+                text: "Ya existe este producto en la lista",
+                duration: 2000,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+
+            /* popUpCodigoRepetido.style.display = 'flex'
             inputCerrarPopUpCodRep.style.display = 'flex'
-            inputCerrarPopUpCodRep.focus()
+            inputCerrarPopUpCodRep.focus() */
 
         } else if(codigoFila1TablaProductosIngresados.textContent == "") {
 
@@ -1340,10 +1386,27 @@ function limpiarTablaProductosIngresados() {
 function confirmarVenta() {
 
     if (codigoFila1TablaProductosIngresados.textContent == "") {
+
+        Toastify({
+            text: "Debes ingresar un producto a la tabla",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+          inputCerrarPopUpIPATNV.focus()
  
-        popUpIngresarProdATablaNV.style.display = 'flex'
+        /* popUpIngresarProdATablaNV.style.display = 'flex'
         inputCerrarPopUpIPATNV.style.display = 'flex'
-        inputCerrarPopUpIPATNV.focus()
+        inputCerrarPopUpIPATNV.focus() */
 
     } else {
 
@@ -2494,66 +2557,50 @@ function mostrarUlBuscadorVP(e) {
 
 }
 
-function mostrarListaProductos() {
-
-    for (producto of listaProductos) {
-
-        let div = document.createElement("div")
-
-        div.className = "bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto"
-
-        div.innerHTML = 
-        `
-        <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.codigo}</div>
-        <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.descripcion}</div>
-        <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.precio}</div>
-        <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.stock}</div>
-        <div>${producto.proveedor}</div>
-        `;
-
-        tablaListaProductos.appendChild(div)
-
-    }
-
-    /* fetch('./productos.json')
-        .then( (res) => res.json())
-        .then( (data) => { data.forEach((producto) => {
-
-
-            let div = document.createElement("div")
-
-            div.className = "bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto"
-
-            div.innerHTML = 
-            `
-            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.codigo}</div>
-            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.descripcion}</div>
-            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.precio}</div>
-            <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">${producto.stock}</div>
-            <div>${producto.proveedor}</div>
-            `;
-
-            tablaListaProductos.appendChild(div)
-
-
-        })
-    }) */
-
-}
-
 function guardarProductoVP() {
 
     if ( (inputCodigoProductoVP.value == "") || (inputDescrProductoVP.value == "") || (inputPrecioProductoVP.value == "") || (inputStockProductoVP.value == "") || (inputProvProductoVP.value == "") ) {
 
-        popUpCompletarCamposVP.style.display = "flex"
+
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVP.style.display = "flex"
         inputCerrarPopUpCCVP.style.display = "flex"
-        inputCerrarPopUpCCVP.focus()
+        inputCerrarPopUpCCVP.focus() */
 
     } else if ( (inputCodigoProductoVP.value == codigoFila1TablaProductos.textContent) || (inputCodigoProductoVP.value == codigoFila2TablaProductos.textContent) || (inputCodigoProductoVP.value == codigoFila3TablaProductos.textContent) || (inputCodigoProductoVP.value == codigoFila4TablaProductos.textContent) || (inputCodigoProductoVP.value == codigoFila5TablaProductos.textContent) ) {
 
-        popUpProductoYaExiste.style.display = "flex"
+        Toastify({
+            text: "El producto ya está registrado",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpProductoYaExiste.style.display = "flex"
         inputCerrarPopUpPYEVP.style.display = "flex"
-        inputCerrarPopUpPYEVP.focus()
+        inputCerrarPopUpPYEVP.focus() */
 
 
     } else if (codigoFila1TablaProductos.textContent == "")  {
@@ -2629,9 +2676,24 @@ function modificarProductoVP() {
 
     if ( (inputCodigoProductoVP.value == "") || (inputDescrProductoVP.value == "") || (inputPrecioProductoVP.value == "") || (inputStockProductoVP.value == "") || (inputProvProductoVP.value == "") ) {
 
-        popUpCompletarCamposVP.style.display = "flex"
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVP.style.display = "flex"
         inputCerrarPopUpCCVP.style.display = "flex"
-        inputCerrarPopUpCCVP.focus()
+        inputCerrarPopUpCCVP.focus() */
 
     } else if (inputCodigoProductoVP.value == codigoFila1TablaProductos.textContent) {
         
@@ -3063,34 +3125,6 @@ function setearCotonetesX200VP(){
 
 // ventana clientes
 
-function mostrarListaClientes() {
-
-    /* fetch('./clientes.json')
-    .then( (res) => res.json())
-    .then( (data) => { data.forEach((cliente) => {
-
-
-        let div = document.createElement("div")
-
-        div.className = "bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente"
-
-        div.innerHTML = 
-        `
-        <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">${cliente.nombre}</div>
-        <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">${cliente.dni}</div>
-        <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">${cliente.telefono}</div>
-        <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">${cliente.email}</div>
-        <div>${cliente.direccion}</div>
-        `;
-
-        tablaListaClientes.appendChild(div)
-
-
-    })
-    }) */
-
-}
-
 function mostrarUlBuscadorVC(e) {
 
     if (e.target.matches("#inputBuscarClientesVC")) {
@@ -3163,15 +3197,45 @@ function guardarClienteVC() {
 
     if ( (inputNombreClienteVC.value == "") || (inputDniClienteVC.value == "") || (inputTelefonoClienteVC.value == "") || (inputEmailClienteVC.value == "") || (inputDireccionClienteVC.value == "") ) {
 
-        popUpCompletarCamposVC.style.display = "flex"
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVC.style.display = "flex"
         inputCerrarPopUpCCVC.style.display = "flex"
-        inputCerrarPopUpCCVC.focus()
+        inputCerrarPopUpCCVC.focus() */
 
     } else if ( (inputDniClienteVC.value == dniFila1TablaClientes.textContent) || (inputDniClienteVC.value == dniFila2TablaClientes.textContent) || (inputDniClienteVC.value == dniFila3TablaClientes.textContent) || (inputDniClienteVC.value == dniFila4TablaClientes.textContent) || (inputDniClienteVC.value == dniFila5TablaClientes.textContent) ) {
 
-        popUpClienteYaExiste.style.display = "flex"
+        Toastify({
+            text: "El cliente ya está registrado",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpClienteYaExiste.style.display = "flex"
         inputCerrarPopUpCYEVC.style.display = "flex"
-        inputCerrarPopUpCYEVC.focus()
+        inputCerrarPopUpCYEVC.focus() */
 
 
     } else if (dniFila1TablaClientes.textContent == "")  {
@@ -3242,9 +3306,24 @@ function modificarClienteVC() {
    
     if ( (inputNombreClienteVC.value == "") || (inputDniClienteVC.value == "") || (inputTelefonoClienteVC.value == "") || (inputEmailClienteVC.value == "") || (inputDireccionClienteVC.value == "") ) {
 
-        popUpCompletarCamposVC.style.display = "flex"
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVC.style.display = "flex"
         inputCerrarPopUpCCVC.style.display = "flex"
-        inputCerrarPopUpCCVC.focus()
+        inputCerrarPopUpCCVC.focus() */
 
     } else if (inputDniClienteVC.value == dniFila1TablaClientes.textContent) {
         
@@ -3405,34 +3484,6 @@ function limpiarInputsVC() {
 
 // ventana proveedores
 
-function mostrarListaProveedores() {
-
-    /* fetch('./proveedores.json')
-    .then( (res) => res.json())
-    .then( (data) => { data.forEach((proveedor) => {
-
-
-        let div = document.createElement("div")
-
-        div.className = "bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores"
-
-        div.innerHTML = 
-        `
-        <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">${proveedor.razonSocial}</div>
-        <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">${proveedor.cuitCuil}</div>
-        <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">${proveedor.telefono}</div>
-        <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">${proveedor.email}</div>
-        <div>${proveedor.direccion}</div>
-        `;
-
-        tablaListaProveedores.appendChild(div)
-
-
-    })
-    }) */
-
-}
-
 function mostrarUlBuscadorVProv(e) {
 
     if (e.target.matches("#inputBuscarProveedoresVProv")) {
@@ -3509,15 +3560,45 @@ function guardarProveedorVProv() {
 
     if ( (inputRazonSocialVProv.value == "") || (inputCuilCuitVProv.value == "") || (inputTelefonoVProv.value == "") || (inputEmailVProv.value == "") || (inputDireccionVProv.value == "") ) {
 
-        popUpCompletarCamposVProv.style.display = "flex"
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVProv.style.display = "flex"
         inputCerrarPopUpCCVProv.style.display = "flex"
-        inputCerrarPopUpCCVProv.focus()
+        inputCerrarPopUpCCVProv.focus() */
 
     } else if ( (inputCuilCuitVProv.value == cuiTCuilFila1TablaProveedores.textContent) || (inputCuilCuitVProv.value == cuiTCuilFila2TablaProveedores.textContent) || (inputCuilCuitVProv.value == cuiTCuilFila3TablaProveedores.textContent) || (inputCuilCuitVProv.value == cuiTCuilFila4TablaProveedores.textContent) || (inputCuilCuitVProv.value == cuiTCuilFila5TablaProveedores.textContent) ) {
 
-        popUpProveedorYaExiste.style.display = "flex"
+        Toastify({
+            text: "El proveedor ya está registrado",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpProveedorYaExiste.style.display = "flex"
         inputCerrarPopUpPYEVProv.style.display = "flex"
-        inputCerrarPopUpPYEVProv.focus()
+        inputCerrarPopUpPYEVProv.focus() */
 
 
     } else if (cuiTCuilFila1TablaProveedores.textContent == "")  {
@@ -3588,9 +3669,24 @@ function modificarProveedorVProv() {
    
     if ( (inputRazonSocialVProv.value == "") || (inputCuilCuitVProv.value == "") || (inputTelefonoVProv.value == "") || (inputEmailVProv.value == "") || (inputDireccionVProv.value == "") ) {
 
-        popUpCompletarCamposVProv.style.display = "flex"
+        Toastify({
+            text: "Debes completar todos los campos",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpCompletarCamposVProv.style.display = "flex"
         inputCerrarPopUpCCVProv.style.display = "flex"
-        inputCerrarPopUpCCVProv.focus()
+        inputCerrarPopUpCCVProv.focus() */
 
     } else if (inputCuilCuitVProv.value == cuiTCuilFila1TablaProveedores.textContent) {
         
@@ -4014,12 +4110,6 @@ const obtenerDatos = async() => {
 // Llamada a las funciones
 
 mostrarVentanaNuevaVenta()
-
-mostrarListaProductos()
-
-mostrarListaClientes()
-
-mostrarListaProveedores()
 
 obtenerDatos()
 
