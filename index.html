@@ -64,6 +64,19 @@
 
     </div>
 
+    <div id="popUpIngresarProdATablaNV" class="popUpAlerts">
+
+        <div>¡ Debes ingresar un producto a la tabla !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnIngresarProdATablaNV" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpIPATNV" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
     <div id="popUpConfirmacionVenta" class="popUpAlerts">
 
         <div>¡ La venta se registro con éxito !</div>
@@ -86,6 +99,71 @@
                 <button id="btnCompletarCamposVP" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
             </div>
             <input type="text" id="inputCerrarPopUpCCVP" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpProductoYaExiste" class="popUpAlerts">
+
+        <div>¡ Ya existe un producto <br> con el codigo ingresado !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnProductoYaExisteVP" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpPYEVP" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpCompletarCamposVC" class="popUpAlerts">
+
+        <div>¡ Debes completar todos los campos !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnCompletarCamposVC" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCCVC" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpClienteYaExiste" class="popUpAlerts">
+
+        <div>¡ Ya existe un cliente <br> con el dni ingresado !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnClienteYaExisteVC" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCYEVC" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpCompletarCamposVProv" class="popUpAlerts">
+
+        <div>¡ Debes completar todos los campos !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnCompletarCamposVProv" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpCCVProv" class="popUpAlerts__btnInput__inputCerrarPopUp">
+        </div>
+
+    </div>
+
+    <div id="popUpProveedorYaExiste" class="popUpAlerts">
+
+        <div>¡ Ya existe un proveedor <br> con el CUIL/CUIT ingresado !</div>
+        <div class="popUpAlerts__btnInput">
+            <div></div>
+            <div class="popUpAlerts__btnInput__btn"> 
+                <button id="btnProveedorYaExisteVProv" class="popUpAlerts__btnInput__btn__prop">Continuar</button>
+            </div>
+            <input type="text" id="inputCerrarPopUpPYEVProv" class="popUpAlerts__btnInput__inputCerrarPopUp">
         </div>
 
     </div>
@@ -117,7 +195,7 @@
 
                 <div class="bodyIndex__ventanas__nuevaVenta__divBuscador">
 
-                    <input id="inputBuscarProductoNV" class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Buscar producto ..">
+                    <input id="inputBuscarProductoNV" class="bodyIndex__ventanas__nuevaVenta__divBuscador__buscador" type="text" placeholder=".. Buscar Producto ..">
 
                     <ul id="ulBuscadorProductoNV" class="ulBuscadorProducto">
                         <li id="liNVChocolateVizzio290g" class="ulBuscadorProducto__li">Chocolate Vizzio 290g</li>
@@ -139,7 +217,7 @@
                 <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn">
 
                     <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels">
-                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Codigo</div>
+                        <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Código</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Cantidad</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__llabelsInputsBtn__labels__prop">Precio U.</div>
                         <div class="bodyIndex__ventanas__nuevaVenta__labelsInputsBtn__labels__prop">Stock Disp</div>
@@ -166,7 +244,7 @@
                             
                             <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
 
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Código</div>
                                 <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
                                 <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
                                 <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
@@ -180,102 +258,48 @@
 
                         <div id="tablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
 
-                            <div id="divChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">1</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Chocolate Vizzio 290g</div>
-                                <div id="cantChocoVizzio290g" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">400</div>
-                                <div id="totalChocoVizzio290g"></div>
+
+
+                            <div id="fila1TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoFila1TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="descrFila1TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="cantFila1TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="precioFila1TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="totalFila1TablaProductosIngresados"></div>
                             </div>
 
-                            <div id="divChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">2</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Chocolate Block 1kg</div>
-                                <div id="cantChocoBlock1kg" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">220</div>
-                                <div id="totalChocoBlock1kg"></div>
+                            <div id="fila2TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoFila2TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="descrFila2TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="cantFila2TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="precioFila2TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="totalFila2TablaProductosIngresados"></div>
                             </div>
 
-                            <div id="divSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">3</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 1.25l</div>
-                                <div id="cantSprite1250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">360</div>
-                                <div id="totalSprite1250ml"></div>
+                            <div id="fila3TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoFila3TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="descrFila3TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="cantFila3TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="precioFila3TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="totalFila3TablaProductosIngresados"></div>
                             </div>
 
-                            <div id="divSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">4</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 2.25l</div>
-                                <div id="cantSprite2250ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">550</div>
-                                <div id="totalSprite2250ml"></div>
+                            <div id="fila4TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoFila4TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="descrFila4TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="cantFila4TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="precioFila4TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="totalFila4TablaProductosIngresados"></div>
                             </div>
 
-                            <div id="divSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">5</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Gaseosa Sprite 3l</div>
-                                <div id="cantSprite3l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">950</div>
-                                <div id="totalSprite3l"></div>
+                            <div id="fila5TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                <div id="codigoFila5TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="descrFila5TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="cantFila5TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="precioFila5TablaProductosIngresados" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                <div id="totalFila5TablaProductosIngresados"></div>
                             </div>
-
-                            <div id="divSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">6</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Sal Fina</div>
-                                <div id="cantSalFina" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">250</div>
-                                <div id="totalSalFina"></div>
-                            </div>
-
-                            <div id="divAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">7</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua Mineral 1.5l</div>
-                                <div id="cantAguaMineral1500ml" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">630</div>
-                                <div id="totalAguaMineral1500ml"></div>
-                            </div>
-
-                            <div id="divAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">8</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua Mineral 2l</div>
-                                <div id="cantAguaMineral2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">760</div>
-                                <div id="totalAguaMineral2l"></div>
-                            </div>
-
-                            <div id="divAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">9</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua con Gas 1l</div>
-                                <div id="cantAguaConGas1l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">960</div>
-                                <div id="totalAguaConGas1l"></div>
-                            </div>
-
-                            <div id="divAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">10</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Agua con Gas 2l</div>
-                                <div id="cantAguaConGas2l" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">1160</div>
-                                <div id="totalAguaConGas2l"></div>
-                            </div>
-
-                            <div id="divSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">11</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Sampoo Pantene</div>
-                                <div id="cantSampooPantene" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">560</div>
-                                <div id="totalSampooPantene"></div>
-                            </div>
-
-                            <div id="divCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
-                                <div id="codigoCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">12</div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">Cotonetes X200</div>
-                                <div id="cantCotonetesX200" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
-                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor">260</div>
-                                <div id="totalCotonetesX200"></div>
-                            </div>
-
+                            
                         </div>
 
                     </div>
@@ -301,17 +325,17 @@
 
                     <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas">
                         
-                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Tipo de pago</div>
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Tipo de Pago</div>
                         <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectTipoPagoNV">
-                            <option value="tipo de pago">Tipo de pago</option>
-                            <option value="efectivo">Efectivo</option>
-                            <option value="tarjeta de debito">Tarjeta de débito</option>
-                            <option value="tarjeta de credito">Tarjeta de crédito</option>
+                            <option value="Tipo de Pago">Tipo de Pago</option>
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="Tarjeta de Debito">Tarjeta de Débito</option>
+                            <option value="Tarjeta de Credito">Tarjeta de Crédito</option>
                         </select>
 
-                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Cant de cuotas</div>
+                        <div class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__labelsPago">Cant de Cuotas</div>
                         <select class="bodyIndex__ventanas__nuevaVentaPago__datos__columnas__selectTipoPago" name="selectTipoPago" id="selectCantCuotasNV">
-                            <option value="cant de cuotas">Cant de cuotas</option>
+                            <option value="Cant de Cuotas">Cant de Cuotas</option>
                             <option value="coutas x1">Coutas x1</option>
                             <option value="coutas x3">Coutas x3</option>
                             <option value="coutas x6">Coutas x6</option>
@@ -342,7 +366,7 @@
             <div id="ventanaProductos" class="bodyIndex__ventanas__productos">
 
                 <div class="bodyIndex__ventanas__productos__titulo">
-                    <div class="bodyIndex__ventanas__productos__titulo__prop">- Lista de productos -</div>
+                    <div class="bodyIndex__ventanas__productos__titulo__prop">- Lista de Productos -</div>
                 </div>                
 
                 <div class="bodyIndex__ventanas__productos__form">
@@ -364,13 +388,13 @@
 
                         </div>
 
-                        <button id="btnGuardarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Guardar producto</button>
+                        <button id="btnGuardarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Guardar Producto</button>
 
-                        <button id="btnModificarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Modificar producto</button>
+                        <button id="btnModificarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Modificar Producto</button>
 
-                        <button id="btnBorrarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Borrar producto</button>
+                        <button id="btnBorrarProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Borrar Producto</button>
 
-                        <button id="btnNuevoProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo producto</button>
+                        <button id="btnNuevoProducto" class="bodyIndex__ventanas__productos__form__prop__btnProductos">Nuevo Producto</button>
                         
                     </div>
 
@@ -380,7 +404,7 @@
 
                     <div class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador">
 
-                        <input id="inputBuscarProductoVP" class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar productos ..">
+                        <input id="inputBuscarProductoVP" class="bodyIndex__ventanas__productos__divTablaVentanaProd__buscador__prop" type="text" placeholder=".. Buscar Productos ..">
 
                         <ul id="ulBuscadorProductoVP" class="ulBuscadorProductoVP">
                             <li id="liVPChocolateVizzio290g" class="ulBuscadorProductoVP__li">Chocolate Vizzio 290g</li>
@@ -419,13 +443,47 @@
 
                         <div id="tablaListaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos">
 
-                            <div id="prod1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
-                                <div id="codigoProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor">1</div>
-                                <div id="descrProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
-                                <div id="precioProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
-                                <div id="stockProd1" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
-                                <div id="provProd1"></div>
+                            <div id="fila1TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoFila1TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="descrFila1TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioFila1TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockFila1TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provFila1TablaProductos"></div>
                             </div>
+
+                            <div id="fila2TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoFila2TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="descrFila2TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioFila2TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockFila2TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provFila2TablaProductos"></div>
+                            </div>
+
+                            <div id="fila3TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoFila3TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="descrFila3TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioFila3TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockFila3TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provFila3TablaProductos"></div>
+                            </div>
+
+                            <div id="fila4TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoFila4TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="descrFila4TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioFila4TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockFila4TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provFila4TablaProductos"></div>
+                            </div>
+
+                            <div id="fila5TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto">
+                                <div id="codigoFila5TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="descrFila5TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="precioFila5TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="stockFila5TablaProductos" class="bodyIndex__ventanas__productos__divTablaVentanaProd__tabla__tablaListaProductos__producto__bor"></div>
+                                <div id="provFila5TablaProductos"></div>
+                            </div>
+
+
 
                         </div>
 
@@ -449,25 +507,25 @@
                         <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs">
 
                             <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Nombre</div>
-                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Nombre">
+                            <input id="inputNombreClienteVC" class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Nombre">
                             <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Dni</div>
-                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dni">
+                            <input id="inputDniClienteVC" class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dni">
                             <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Teléfono</div>
-                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
+                            <input id="inputTelefonoClienteVC" class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
                             <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Email</div>
-                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
+                            <input id="inputEmailClienteVC" class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
                             <div class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__labels">Dirección</div>
-                            <input class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
+                            <input id="inputDireccionClienteVC" class="bodyIndex__ventanas__clientes__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
 
                         </div>
 
-                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Guardar cliente</button>
+                        <button id="btnGuardarCliente" class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Guardar Cliente</button>
 
-                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Modificar cliente</button>
+                        <button id="btnModificarCliente" class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Modificar Cliente</button>
 
-                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Borrar cliente</button>
+                        <button id="btnBorrarCliente" class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Borrar Cliente</button>
 
-                        <button class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Nuevo cliente</button>
+                        <button id="btnNuevoCliente" class="bodyIndex__ventanas__clientes__form__prop__btnClientes">Nuevo Cliente</button>
                         
                     </div>
 
@@ -477,7 +535,12 @@
 
                     <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__buscador">
 
-                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__buscador__prop" type="text" placeholder=".. Buscar clientes ..">
+                        <input id="inputBuscarClientesVC" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__buscador__prop" type="text" placeholder=".. Buscar clientes ..">
+
+                        <ul id="ulBuscadorClienteVC" class="ulBuscadorClienteVC">
+                            <li id="liVCMarceloBraganza" class="ulBuscadorClienteVC__li">Marcelo Braganza</li>
+                            <li id="liVCJulietaMiquelarena" class="ulBuscadorClienteVC__li">Julieta Miquelarena</li>
+                        </ul>
 
                     </div>
 
@@ -501,13 +564,45 @@
 
                         <div id="tablaListaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes">
 
-                            <!-- <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
-                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">Marcelo Braganza</div>
-                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">38917705</div>
-                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">2926450496</div>
-                                <div class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor">marcelo_braganza@hotmail.com</div>
-                                <div>Las Heras 758</div>
-                            </div> -->
+                            <div id="fila1TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div id="nombreFila1TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="dniFila1TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="telefonoFila1TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="emailFila1TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="direccionFila1TablaClientes"></div>
+                            </div>
+
+                            <div id="fila2TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div id="nombreFila2TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="dniFila2TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="telefonoFila2TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="emailFila2TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="direccionFila2TablaClientes"></div>
+                            </div>
+
+                            <div id="fila3TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div id="nombreFila3TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="dniFila3TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="telefonoFila3TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="emailFila3TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="direccionFila3TablaClientes"></div>
+                            </div>
+
+                            <div id="fila4TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div id="nombreFila4TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="dniFila4TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="telefonoFila4TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="emailFila4TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="direccionFila4TablaClientes"></div>
+                            </div>
+
+                            <div id="fila5TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente">
+                                <div id="nombreFila5TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="dniFila5TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="telefonoFila5TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="emailFila5TablaClientes" class="bodyIndex__ventanas__clientes__divTablaVentanaClien__tabla__tablaListaClientes__cliente__bor"></div>
+                                <div id="direccionFila5TablaClientes"></div>
+                            </div>
 
                         </div>
 
@@ -529,26 +624,26 @@
 
                         <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs">
 
-                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Razon Social</div>
-                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Razon Social">
+                            <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Razón Social</div>
+                            <input id="inputRazonSocialVProv" class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Razón Social">
                             <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">CUIT/CUIL</div>
-                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="CUIT/CUIL">
+                            <input id="inputCuilCuitVProv" class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="CUIT/CUIL">
                             <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Teléfono</div>
-                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
+                            <input id="inputTelefonoVProv" class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Teléfono">
                             <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Email</div>
-                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
+                            <input id="inputEmailVProv" class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Email">
                             <div class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__labels">Dirección</div>
-                            <input class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
+                            <input id="inputDireccionVProv" class="bodyIndex__ventanas__proveedores__form__prop__labelsInputs__inputs" type="text" placeholder="Dirección">
 
                         </div>
 
-                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Guardar proveedor</button>
+                        <button id="btnGuardarProveedor" class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Guardar Proveedor</button>
 
-                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Modificar proveedor</button>
+                        <button id="btnModificarProveedor" class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Modificar Proveedor</button>
 
-                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Borrar proveedor</button>
+                        <button id="btnBorrarProveedor" class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Borrar Proveedor</button>
 
-                        <button class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Nuevo proveedor</button>
+                        <button id="btnNuevoProveedor" class="bodyIndex__ventanas__proveedores__form__prop__btnProveedores">Nuevo Proveedor</button>
                         
                     </div>
 
@@ -558,7 +653,12 @@
 
                     <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__buscador">
 
-                        <input id="inputBuscarProductosVP" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__buscador__prop" type="text" placeholder=".. Buscar proveedores ..">
+                        <input id="inputBuscarProveedoresVProv" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__buscador__prop" type="text" placeholder=".. Buscar Proveedores ..">
+
+                        <ul id="ulBuscadorProveedorVProv" class="ulBuscadorProveedorVProv">
+                            <li id="liVProvSancor" class="ulBuscadorProveedorVProv__li">Sancor</li>
+                            <li id="liVProvDistElColo" class="ulBuscadorProveedorVProv__li">Dist. el Colo</li>
+                        </ul>
 
                     </div>
 
@@ -568,8 +668,8 @@
                             
                             <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla">
 
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Razon Social</div>
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">CUIL/CUIT</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Razón Social</div>
+                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">CUIT/CUIL</div>
                                 <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Teléfono</div>
                                 <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__propProveedores__headerTabla__bor">Email</div>
                                 <div>Dirección</div>
@@ -582,13 +682,45 @@
 
                         <div id="tablaListaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores">
 
-                            <!-- <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">Dist. el colo</div>
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">23289178059</div>
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">2926496996</div>
-                                <div class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor">distColo@hotmail.com</div>
-                                <div>Belgrano 1758</div>
-                            </div> -->
+                            <div id="fila1TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div id="razonSocialFila1TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="cuiTCuilFila1TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="telefonoFila1TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="emailFila1TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="direccionFila1TablaProveedores"></div>
+                            </div>
+
+                            <div id="fila2TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div id="razonSocialFila2TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="cuiTCuilFila2TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="telefonoFila2TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="emailFila2TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="direccionFila2TablaProveedores"></div>
+                            </div>
+
+                            <div id="fila3TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div id="razonSocialFila3TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="cuiTCuilFila3TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="telefonoFila3TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="emailFila3TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="direccionFila3TablaProveedores"></div>
+                            </div>
+
+                            <div id="fila4TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div id="razonSocialFila4TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="cuiTCuilFila4TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="telefonoFila4TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="emailFila4TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="direccionFila4TablaProveedores"></div>
+                            </div>
+
+                            <div id="fila5TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores">
+                                <div id="razonSocialFila5TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="cuiTCuilFila5TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="telefonoFila5TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="emailFila5TablaProveedores" class="bodyIndex__ventanas__proveedores__divTablaVentanaProv__tabla__tablaListaProveedores__proveedores__bor"></div>
+                                <div id="direccionFila5TablaProveedores"></div>
+                            </div>
 
                         </div>
 
@@ -606,9 +738,9 @@
 
                     <div class="bodyIndex__ventanas__ventas__btnSaldo__btns">
 
-                        <button class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnBorrarVenta">Borarr Venta</button>
+                        <button id="btnBorrarVentaVV" class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnBorrarVenta">Borrar Venta</button>
 
-                        <button class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnImprimirVenta">Imprimir <br> Venta</button>
+                        <button id="btnImprimirVenta" class="bodyIndex__ventanas__ventas__btnSaldo__btns__btnImprimirVenta">Imprimir <br> Venta</button>
 
                     </div>
                     
@@ -618,7 +750,12 @@
 
                             <div>Saldo Total</div>
 
-                            <div>160000</div>
+                            <div class="bodyIndex__ventanas__ventas__btnSaldo__divSaldo__prop__total">
+
+                                <div>$</div>
+                                <div id="saldoTotalVentasVV"></div>
+
+                            </div>
 
                         </div>
 
@@ -632,7 +769,7 @@
 
                         <div class="bodyIndex__ventanas__ventas__buscadorTabla__buscador__input">
 
-                            <input type="text" class="bodyIndex__ventanas__ventas__buscadorTabla__buscador__input__prop" placeholder=".. Buscar Venta ..">
+                            <input type="text" id="inputBuscarVentasVV" class="bodyIndex__ventanas__ventas__buscadorTabla__buscador__input__prop" placeholder=".. Buscar Venta ..">
 
                         </div>
 
@@ -644,7 +781,7 @@
                             
                             <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header">
 
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Codigo Venta</div>
+                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Código Venta</div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Detalle</div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Cliente</div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__headerScroll__header__prop">Tipo Pago</div>
@@ -656,137 +793,498 @@
 
                         </div>
 
-                        <div id="" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas">
+                        <div id="tablaListaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas">
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">001</div>
+                            <div id="fila1TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div id="codigoFila1TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                    <button id="btnVerDetalleFila1TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <div id="popUpDetalleVentaFila1TablaVentas" class="popUpBtnDetalleVenta">
+
+                                        <input type="text" id="inputCerrarPopUpDetalleVentaFila1TablaVentas" class="popUpAlerts__btnInput__inputCerrarPopUp">
+
+                                        <div class="popUpBtnDetalleVenta__btnCerrarPopUp">
+                                            <div id="btnCerrarPopUpDetalleVentaFila1TablaVentas">X</div>
+                                        </div>
+
+                                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla popUpBtnDetalleVenta__tabla">
+
+                                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                                                
+                                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+                    
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+                    
+                                                </div>
+                    
+                                                <div></div>
+                    
+                                            </div>
+                    
+                                            <div id="tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                    
+                    
+                    
+                                                <div id="fila1tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila1TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila1TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila1TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila1TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila1TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila2tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila2TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila2TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila2TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila2TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila2TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila3tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila3TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila3TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila3TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila3TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila3TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila4tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila4TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila4TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila4TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila4TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila4TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila5tablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila5TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila5TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila5TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila5TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila5TablaProductosIngresadosPopUpDetalleVentaFila1TablaVentas"></div>
+                                                </div>
+                    
+                                                
+                                                
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">Saldo Total</div>
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">
+                                            <div>$</div>
+                                            <div id="saldoTotalPopUpDetalleFila1TablaVentas"></div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Marcelo Braganza</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>160000</div>
+                                <div id="clienteFila1TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="tipoPagoFila1TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="saldoTotalVentaFila1TablaVentas"></div>
                             </div>
 
-                            <!-- <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">002</div>
+
+
+
+
+
+
+                            <div id="fila2TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div id="codigoFila2TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                    <button id="btnVerDetalleFila2TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <div id="popUpDetalleVentaFila2TablaVentas" class="popUpBtnDetalleVenta">
+
+                                        <input type="text" id="inputCerrarPopUpDetalleVentaFila2TablaVentas" class="popUpAlerts__btnInput__inputCerrarPopUp">
+
+                                        <div class="popUpBtnDetalleVenta__btnCerrarPopUp">
+                                            <div id="btnCerrarPopUpDetalleVentaFila2TablaVentas">X</div>
+                                        </div>
+
+                                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla popUpBtnDetalleVenta__tabla">
+
+                                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                                                
+                                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+                    
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+                    
+                                                </div>
+                    
+                                                <div></div>
+                    
+                                            </div>
+                    
+                                            <div id="tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                    
+                    
+                    
+                                                <div id="fila1tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila1TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila1TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila1TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila1TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila1TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila2tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila2TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila2TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila2TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila2TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila2TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila3tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila3TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila3TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila3TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila3TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila3TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila4tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila4TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila4TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila4TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila4TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila4TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila5tablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila5TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila5TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila5TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila5TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila5TablaProductosIngresadosPopUpDetalleVentaFila2TablaVentas"></div>
+                                                </div>
+                    
+                                                
+                                                
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">Saldo Total</div>
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">
+                                            <div>$</div>
+                                            <div id="saldoTotalPopUpDetalleFila2TablaVentas"></div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Sebastian Lopez</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Credito</div>
-                                <div>260000</div>
+                                <div id="clienteFila2TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="tipoPagoFila2TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="saldoTotalVentaFila2TablaVentas"></div>
                             </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">003</div>
+
+
+
+
+
+
+
+                            <div id="fila3TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div id="codigoFila3TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <button id="btnVerDetalleFila3TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <div id="popUpDetalleVentaFila3TablaVentas" class="popUpBtnDetalleVenta">
+
+                                        <input type="text" id="inputCerrarPopUpDetalleVentaFila3TablaVentas" class="popUpAlerts__btnInput__inputCerrarPopUp">
+
+                                        <div class="popUpBtnDetalleVenta__btnCerrarPopUp">
+                                            <div id="btnCerrarPopUpDetalleVentaFila3TablaVentas">X</div>
+                                        </div>
+
+                                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla popUpBtnDetalleVenta__tabla">
+
+                                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                                                
+                                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+                    
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+                    
+                                                </div>
+                    
+                                                <div></div>
+                    
+                                            </div>
+                    
+                                            <div id="tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                    
+                    
+                    
+                                                <div id="fila1tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila1TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila1TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila1TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila1TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila1TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila2tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila2TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila2TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila2TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila2TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila2TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila3tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila3TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila3TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila3TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila3TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila3TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila4tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila4TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila4TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila4TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila4TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila4TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila5tablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila5TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila5TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila5TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila5TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila5TablaProductosIngresadosPopUpDetalleVentaFila3TablaVentas"></div>
+                                                </div>
+                    
+                                                
+                                                
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">Saldo Total</div>
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">
+                                            <div>$</div>
+                                            <div id="saldoTotalPopUpDetalleFila3TablaVentas"></div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Osvaldo Braganza</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Débito</div>
-                                <div>560000</div>
+                                <div id="clienteFila3TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="tipoPagoFila3TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="saldoTotalVentaFila3TablaVentas"></div>
                             </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">004</div>
+                            <div id="fila4TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div id="codigoFila4TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <button id="btnVerDetalleFila4TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+
+                                    <div id="popUpDetalleVentaFila4TablaVentas" class="popUpBtnDetalleVenta">
+
+                                        <input type="text" id="inputCerrarPopUpDetalleVentaFila4TablaVentas" class="popUpAlerts__btnInput__inputCerrarPopUp">
+
+                                        <div class="popUpBtnDetalleVenta__btnCerrarPopUp">
+                                            <div id="btnCerrarPopUpDetalleVentaFila4TablaVentas">X</div>
+                                        </div>
+
+                                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla popUpBtnDetalleVenta__tabla">
+
+                                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                                                
+                                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+                    
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+                    
+                                                </div>
+                    
+                                                <div></div>
+                    
+                                            </div>
+                    
+                                            <div id="tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                    
+                    
+                    
+                                                <div id="fila1tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila1TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila1TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila1TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila1TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila1TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila2tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila2TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila2TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila2TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila2TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila2TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila3tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila3TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila3TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila3TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila3TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila3TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila4tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila4TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila4TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila4TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila4TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila4TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila5tablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila5TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila5TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila5TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila5TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila5TablaProductosIngresadosPopUpDetalleVentaFila4TablaVentas"></div>
+                                                </div>
+                    
+                                                
+                                                
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">Saldo Total</div>
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">
+                                            <div>$</div>
+                                            <div id="saldoTotalPopUpDetalleFila4TablaVentas"></div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Julieta Miquelarena</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>340000</div>
+                                <div id="clienteFila4TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="tipoPagoFila4TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="saldoTotalVentaFila4TablaVentas"></div>
                             </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">005</div>
+                            <div id="fila5TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
+                                <div id="codigoFila5TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
                                 <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Mariela Piro</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
-                                <div>180500</div>
-                            </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">006</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Juan Peratz</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>10000</div>
-                            </div>
+                                    <button id="btnVerDetalleFila5TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">007</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Franco Wagner</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Tarjeta de Débito</div>
-                                <div>690000</div>
-                            </div>
+                                    <div id="popUpDetalleVentaFila5TablaVentas" class="popUpBtnDetalleVenta">
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">008</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Marco Lavagnino</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>60000</div>
-                            </div>
+                                        <input type="text" id="inputCerrarPopUpDetalleVentaFila5TablaVentas" class="popUpAlerts__btnInput__inputCerrarPopUp">
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">009</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Juan Cruz Piro</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
-                                <div>260000</div>
-                            </div>
+                                        <div class="popUpBtnDetalleVenta__btnCerrarPopUp">
+                                            <div id="btnCerrarPopUpDetalleVentaFila5TablaVentas">X</div>
+                                        </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">010</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Malena Zelaya</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>650000</div>
-                            </div>
+                                        <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla popUpBtnDetalleVenta__tabla">
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">011</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Mario Piro</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>25000</div>
-                            </div>
+                                            <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto">
+                                                
+                                                <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV">
+                    
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Codigo</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Descripción</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Cantidad</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__bor">Precio U.</div>
+                                                    <div class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__propProducto__headerTablaNuevaV__total">TOTAL</div>
+                    
+                                                </div>
+                    
+                                                <div></div>
+                    
+                                            </div>
+                    
+                                            <div id="tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__tablaProdIngresados">
+                    
+                    
+                    
+                                                <div id="fila1tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila1TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila1TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila1TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila1TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila1TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas"></div>
+                                                </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">012</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
-                                </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Osvaldo Joaquin Braganza</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Cheque</div>
-                                <div>50000</div>
-                            </div>
+                                                <div id="fila2tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila2TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila2TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila2TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila2TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila2TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas"></div>
+                                                </div>
 
-                            <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas">
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">013</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle">
-                                    <button id="btnVerDetalle" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__detalle__prop">Ver detalle</button>
+                                                <div id="fila3tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila3TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila3TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila3TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila3TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila3TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila4tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila4TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila4TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila4TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila4TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila4TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas"></div>
+                                                </div>
+
+                                                <div id="fila5tablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado">
+                                                    <div id="codigoFila5TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="descrFila5TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="cantFila5TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="precioFila5TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas" class="bodyIndex__ventanas__nuevaVenta__divTablaNuevaVenta__tabla__productoIngresado__bor"></div>
+                                                    <div id="totalFila5TablaProductosIngresadosPopUpDetalleVentaFila5TablaVentas"></div>
+                                                </div>
+                    
+                                                
+                                                
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">Saldo Total</div>
+                                        <div class="popUpBtnDetalleVenta__labelSaldo">
+                                            <div>$</div>
+                                            <div id="saldoTotalPopUpDetalleFila5TablaVentas"></div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Francisco Lavagnino</div>
-                                <div class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop">Efectivo</div>
-                                <div>90000</div>
-                            </div> -->
+                                <div id="clienteFila5TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="tipoPagoFila5TablaVentas" class="bodyIndex__ventanas__ventas__buscadorTabla__tabla__tablaListaVentas__ventas__prop"></div>
+                                <div id="saldoTotalVentaFila5TablaVentas"></div>
+                            </div>
 
                         </div>
 
@@ -806,11 +1304,12 @@
 
                         <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos">
 
-                            <div>Razon Social:</div>
+                            <div>Razón Social:</div>
                             <div>Lito Soluciones Informáticas</div>
                             <div class="bodyIndex__ventanas__acercaDe__datosEmpresa__divDatos__datos__br"></div>
                             <div>Dirección Postal:</div>
-                            <div>Las Heras 758</div>
+                            <div>Las Heras 758, Coronel Suárez</div>
+                            <div>Pcia de Buenos Aires</div>
 
                         </div>
 
@@ -844,6 +1343,7 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>

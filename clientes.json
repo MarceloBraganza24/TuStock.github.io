@@ -1,10 +1,10 @@
 [
 
-    {"nombre":"Marcelo Adrián braganza","dni":38917705,"telefono":2926450496, "email": "marcelo_braganza@hotmail.com", "direccion": "Las Heras 758"},
+    {"nombre":"Marcelo Braganza","dni":38917705,"telefono":2926450496, "email": "marcelo_braganza@hotmail.com", "direccion": "Las Heras 758"},
     {"nombre":"Sebastian Lopez","dni":36269505,"telefono":2926469596, "email": "seba_lopez@hotmail.com", "direccion": "Grand Bour 736"},
-    {"nombre":"Julieta Miquelarena","dni":39110464,"telefono":2926412818, "email": "julimique@hotmail.com", "direccion": "Sarmiente 374"},
+    {"nombre":"Julieta Miquelarena","dni":39110464,"telefono":2926412818, "email": "julimique@hotmail.com", "direccion": "Sarmiento 374"},
     {"nombre":"Mariela Piro","dni":21592165,"telefono":2926450296, "email": "mariela.piro@hotmail.com", "direccion": "Las Heras 758"},
-    {"nombre":"Osvaldo Lujan braganza","dni":17935299,"telefono":2926451966, "email": "osvaldo.braganza@hotmail.com", "direccion": "Las Heras 758"},
+    {"nombre":"Osvaldo Braganza","dni":17935299,"telefono":2926451966, "email": "osvaldo.braganza@hotmail.com", "direccion": "Las Heras 758"},
     {"nombre":"Marco Lavagnino","dni":38917695,"telefono":2926451756, "email": "maro.lavagnino@hotmail.com", "direccion": "Leon XIII 1963"},
     {"nombre":"Franco Wagner","dni":38914905,"telefono":29264896296, "email": "franco_wagner@hotmail.com", "direccion": "Mitre 375"},
     {"nombre":"Malena Zelaya","dni":11295296,"telefono":292644696, "email": "male.zelaya@hotmail.com", "direccion": "Pedro Gallo 169"},
