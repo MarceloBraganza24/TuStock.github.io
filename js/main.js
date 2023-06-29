@@ -482,6 +482,10 @@ btnVerDetalleFila5TablaVentas.addEventListener("click",mostrarPopUpDetalleVentaF
 const clienteFila5TablaVentas = document.querySelector("#clienteFila5TablaVentas")
 const tipoPagoFila5TablaVentas = document.querySelector("#tipoPagoFila5TablaVentas")
 const saldoTotalVentaFila5TablaVentas = document.querySelector("#saldoTotalVentaFila5TablaVentas")
+
+// acerca de
+
+const razonSocialDatosEmpresa = document.querySelector("#razonSocialDatosEmpresa")
  
 // popups
 
@@ -1088,6 +1092,8 @@ function setearProductoListaNuevaVenta(e) {
             const prod = new ProductoIngresado (inputCodigoProductoNV.value,inputBuscarProductoNV.value,inputCantidadNV.value,inputPrecioNV.innerText,inputPrecioNV.innerText * inputCantidadNV.value)
             listaProductosIngresadosNuevaVenta.push(prod)            
 
+            localStorage.setItem("Producto Nuevo",JSON.stringify(prod))
+
             saldosTotalesNuevaVenta.push(inputCantidadNV.value * inputPrecioNV.innerText)
             mostrarSaldoTotalNuevaVenta()
 
@@ -1105,6 +1111,8 @@ function setearProductoListaNuevaVenta(e) {
 
             const prod = new ProductoIngresado (inputCodigoProductoNV.value,inputBuscarProductoNV.value,inputCantidadNV.value,inputPrecioNV.innerText,inputPrecioNV.innerText * inputCantidadNV.value)
             listaProductosIngresadosNuevaVenta.push(prod)            
+
+            localStorage.setItem("Producto Nuevo",JSON.stringify(prod))
 
             saldosTotalesNuevaVenta.push(inputCantidadNV.value * inputPrecioNV.innerText)
             mostrarSaldoTotalNuevaVenta()
@@ -1124,6 +1132,8 @@ function setearProductoListaNuevaVenta(e) {
             const prod = new ProductoIngresado (inputCodigoProductoNV.value,inputBuscarProductoNV.value,inputCantidadNV.value,inputPrecioNV.innerText,inputPrecioNV.innerText * inputCantidadNV.value)
             listaProductosIngresadosNuevaVenta.push(prod)            
 
+            localStorage.setItem("Producto Nuevo",JSON.stringify(prod))
+
             saldosTotalesNuevaVenta.push(inputCantidadNV.value * inputPrecioNV.innerText)
             mostrarSaldoTotalNuevaVenta()
 
@@ -1140,7 +1150,9 @@ function setearProductoListaNuevaVenta(e) {
             totalFila4TablaProductosIngresados.textContent = inputCantidadNV.value * inputPrecioNV.innerText
 
             const prod = new ProductoIngresado (inputCodigoProductoNV.value,inputBuscarProductoNV.value,inputCantidadNV.value,inputPrecioNV.innerText,inputPrecioNV.innerText * inputCantidadNV.value)
-            listaProductosIngresadosNuevaVenta.push(prod)            
+            listaProductosIngresadosNuevaVenta.push(prod)           
+            
+            localStorage.setItem("Producto Nuevo",JSON.stringify(prod))
 
             saldosTotalesNuevaVenta.push(inputCantidadNV.value * inputPrecioNV.innerText)
             mostrarSaldoTotalNuevaVenta()
@@ -1158,7 +1170,9 @@ function setearProductoListaNuevaVenta(e) {
             totalFila5TablaProductosIngresados.textContent = inputCantidadNV.value * inputPrecioNV.innerText
 
             const prod = new ProductoIngresado (inputCodigoProductoNV.value,inputBuscarProductoNV.value,inputCantidadNV.value,inputPrecioNV.innerText,inputPrecioNV.innerText * inputCantidadNV.value)
-            listaProductosIngresadosNuevaVenta.push(prod)            
+            listaProductosIngresadosNuevaVenta.push(prod)         
+            
+            localStorage.setItem("Producto Nuevo",JSON.stringify(prod))
 
             saldosTotalesNuevaVenta.push(inputCantidadNV.value * inputPrecioNV.innerText)
             mostrarSaldoTotalNuevaVenta()
@@ -1344,9 +1358,25 @@ function confirmarVenta() {
 
         saldosTotalesNuevaVenta.length = 0;
 
-        popUpConfirmacionVenta.style.display = 'flex'
+
+        Toastify({
+            text: "La venta se registró con éxito",
+            duration: 2000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
+        /* popUpConfirmacionVenta.style.display = 'flex'
         inputCerrarPopUpCV.style.display = 'flex'
-        inputCerrarPopUpCV.focus()
+        inputCerrarPopUpCV.focus() */
     }
 
 }
@@ -3962,6 +3992,25 @@ function borrarVenta() {
 
 }
 
+// acerca de 
+
+const obtenerDatos = async() => {
+
+    const resp = await fetch("./datosEmpresa.json")
+    const data = await resp.json()
+
+    data.forEach( (dato) => {
+
+        razonSocialDatosEmpresa.textContent = dato.razonSocial
+        direccionPostal1DatosEmpresa.textContent = dato.direccionPostal1
+        direccionPostal2DatosEmpresa.textContent = dato.direccionPostal2
+        nombreDatosEmpresa.textContent = dato.nombre
+        telefonoDatosEmpresa.textContent = dato.telefono
+
+    } )
+
+}
+
 // Llamada a las funciones
 
 mostrarVentanaNuevaVenta()
@@ -3971,6 +4020,8 @@ mostrarListaProductos()
 mostrarListaClientes()
 
 mostrarListaProveedores()
+
+obtenerDatos()
 
 // Pruebas
 
