@@ -1036,34 +1036,34 @@ function cerrarPopUpPYEVProv() {
 
 function setearProductoNuevaVenta(e) {
 
+    
+
     if(e.keyCode === 13) {
+
+        if (inputCodigoProductoNV.value == ``) {
+
+            Toastify({
+                text: "Debes ingresar un producto a la tabla",
+                duration: 2000,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+    
+        }
 
         fetch('./productos.json')
         .then( (res) => res.json())
         .then( (data) => { data.forEach((producto) => {
 
-            if(inputCodigoProductoNV.value == ``) {
-
-                Toastify({
-                    text: "Debes ingresar un producto a la tabla",
-                    duration: 2000,
-                    destination: "https://github.com/apvarun/toastify-js",
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                      background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
-    
-                /* popUpIngreseUnCodigo.style.display = 'flex'
-                inputCerrarPopUpCod.style.display = 'flex'
-                inputCerrarPopUpCod.focus() */
-        
-            }  else if (inputCodigoProductoNV.value == producto.codigo) {
+            if (inputCodigoProductoNV.value == producto.codigo) {
                 inputBuscarProductoNV.value = `${producto.descripcion}`
                 inputPrecioNV.innerHTML = `<div>${producto.precio}</div>`
                 inputStockDispNV.innerHTML = `<div>${producto.stock}</div>`
@@ -1121,6 +1121,7 @@ function setearProductoListaNuevaVenta(e) {
                 },
                 onClick: function(){} // Callback after click
               }).showToast();
+              inputCerrarPopUpCodRep.focus()
 
             /* popUpCodigoRepetido.style.display = 'flex'
             inputCerrarPopUpCodRep.style.display = 'flex'
